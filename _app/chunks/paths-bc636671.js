@@ -1,1 +1,1 @@
-import{b as a}from"./paths-28a87002.js";const s=`${a}/`,o=`${a}/blog`,t=`${a}/gallery`,$=`${a}/projects`,e=`${a}/about`,p=s=>`${a}/content/${s}`;export{o as a,t as b,$ as c,e as d,p as e,s as p};
+import{b as t}from"./paths-28a87002.js";const s=`${t}/`,p=`${t}/blog`,c=`${t}/gallery`,e=`${t}/projects`,n=`${t}/about`,h=a=>`${t}/content/${a}`;export{p as a,c as b,e as c,n as d,h as e,s as p};
