@@ -14,7 +14,7 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-33570543.js">
+		<link rel="modulepreload" href="/_app/start-b3c11b2d.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-5f5924ad.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/_app/pages/__layout.svelte-cff0f44f.js">
@@ -22,15 +22,15 @@
 		<link rel="modulepreload" href="/_app/chunks/default-2d4a8e8c.js">
 		<link rel="modulepreload" href="/_app/chunks/timeline.module-4482dd15.js">
 		<link rel="modulepreload" href="/_app/chunks/theme-dba92e55.js">
-		<link rel="modulepreload" href="/_app/pages/content/problem-001-ru.svx-5dd1694c.js">
-		<link rel="modulepreload" href="/_app/chunks/Blogpost-c5ea331d.js">
+		<link rel="modulepreload" href="/_app/pages/content/problem-001-ru.svx-7a7a1b1a.js">
+		<link rel="modulepreload" href="/_app/chunks/LayoutProjectEuler-2c8fd127.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-0542940a.css">
 		<link rel="stylesheet" href="/_app/assets/timeline.module-a1dc6104.css">
-		<link rel="stylesheet" href="/_app/assets/Blogpost-fd0e13aa.css">
+		<link rel="stylesheet" href="/_app/assets/LayoutProjectEuler-3ed1f3b3.css">
 
 		<script type="module">
-			import { start } from "/_app/start-33570543.js";
+			import { start } from "/_app/start-b3c11b2d.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -44,7 +44,7 @@
 					error: null,
 					nodes: [
 						import("/_app/pages/__layout.svelte-cff0f44f.js"),
-						import("/_app/pages/content/problem-001-ru.svx-5dd1694c.js")
+						import("/_app/pages/content/problem-001-ru.svx-7a7a1b1a.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -97,10 +97,10 @@
 </header>
 	<section label="content" class="content svelte-1fl6ap9">
 
-<header class="_header_g3df2_1"><h1>Проект Эйлера #1: Числа, кратные 3 или 5</h1></header>
-<article class="_article_g3df2_23"><p><em>Если выписать все натуральные числа меньше 10, кратные 3 или 5, то получим 3, 5, 6 и 9. Сумма этих чисел равна 23.</em></p>
-<p><em>Найдите сумму всех чисел меньше 1000, кратных 3 или 5.</em></p>
-<h2>Вычислительный подход</h2>
+<header class="_header_1ludz_1"><h1>Проект Эйлера #1: Числа, кратные 3 или 5</h1></header>
+<article class="_article_1ludz_23"><header class="_problem_1ludz_53"><div slot="problem">Если выписать все натуральные числа меньше 10, кратные 3 или 5, то получим 3, 5, 6 и 9. Сумма этих чисел равна 23.
+<p>Найдите сумму всех чисел меньше 1000, кратных 3 или 5.</p></div></header>
+	<h2>Вычислительный подход</h2>
 <p>Попробуем решить задачу, вычислив сумму всех множителей напрямую, всё же тысяча - смехотворный объем работы для современной вычислительной техники.</p>
 <p>Для решения задачи создадим переменную для хранения значения суммы кратных чисел. С помощью цикла, совершим обход натуральных чисел, проверяя делимость на 3 или 5 остатком от деления. Если остаток равен нулю - добавляем значение к нашей переменной. После окончания обхода задача решена.</p>
 <h3>Пример реализации на Python</h3>

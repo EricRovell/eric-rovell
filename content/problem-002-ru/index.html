@@ -14,7 +14,7 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-33570543.js">
+		<link rel="modulepreload" href="/_app/start-b3c11b2d.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-5f5924ad.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-28a87002.js">
 		<link rel="modulepreload" href="/_app/pages/__layout.svelte-cff0f44f.js">
@@ -22,15 +22,15 @@
 		<link rel="modulepreload" href="/_app/chunks/default-2d4a8e8c.js">
 		<link rel="modulepreload" href="/_app/chunks/timeline.module-4482dd15.js">
 		<link rel="modulepreload" href="/_app/chunks/theme-dba92e55.js">
-		<link rel="modulepreload" href="/_app/pages/content/problem-002-ru.svx-dc901d71.js">
-		<link rel="modulepreload" href="/_app/chunks/Blogpost-c5ea331d.js">
+		<link rel="modulepreload" href="/_app/pages/content/problem-002-ru.svx-ebccc333.js">
+		<link rel="modulepreload" href="/_app/chunks/LayoutProjectEuler-2c8fd127.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-0542940a.css">
 		<link rel="stylesheet" href="/_app/assets/timeline.module-a1dc6104.css">
-		<link rel="stylesheet" href="/_app/assets/Blogpost-fd0e13aa.css">
+		<link rel="stylesheet" href="/_app/assets/LayoutProjectEuler-3ed1f3b3.css">
 
 		<script type="module">
-			import { start } from "/_app/start-33570543.js";
+			import { start } from "/_app/start-b3c11b2d.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -44,7 +44,7 @@
 					error: null,
 					nodes: [
 						import("/_app/pages/__layout.svelte-cff0f44f.js"),
-						import("/_app/pages/content/problem-002-ru.svx-dc901d71.js")
+						import("/_app/pages/content/problem-002-ru.svx-ebccc333.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -97,12 +97,11 @@
 </header>
 	<section label="content" class="content svelte-1fl6ap9">
 
-<header class="_header_g3df2_1"><h1>Проект Эйлера #2: Чётные числа Фибоначчи</h1></header>
-<article class="_article_g3df2_23"><h1>Проблема №2: Чётные числа Фибоначчи</h1>
-<p>Каждый новый член последовательности Фибоначчи получается из суммы двух предыдущих. Начиная с 1 и 2, первые 10 членов последовательности будут:</p>
+<header class="_header_1ludz_1"><h1>Проект Эйлера #2: Чётные числа Фибоначчи</h1></header>
+<article class="_article_1ludz_23"><header class="_problem_1ludz_53"><div slot="problem">Каждый новый член последовательности Фибоначчи получается из суммы двух предыдущих. Начиная с 1 и 2, первые 10 членов последовательности будут:
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo separator="true">,</mo><mn>8</mn><mo separator="true">,</mo><mn>13</mn><mo separator="true">,</mo><mn>21</mn><mo separator="true">,</mo><mn>34</mn><mo separator="true">,</mo><mn>55</mn><mo separator="true">,</mo><mn>89</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">8</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">13</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">21</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">34</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">55</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">89</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">...</span></span></span></span></span><!-- HTML_TAG_END -->
-<p>Найти сумму всех чётных членов последовательности, значения которых не превышают четыре миллиона.</p>
-<h2>Brute-force решение</h2>
+<p>Найти сумму всех чётных членов последовательности, значения которых не превышают четыре миллиона.</p></div></header>
+	<h2>Brute-force решение</h2>
 <p>Для начала отбросим тонкости и попробуем решить задачу максимально просто. Так как нам нужно сумму членов последовательности, удовлетворяющих некоторому условию, то необходимо сгенерировать саму последовательность.</p>
 <h3>Пример реализации на Python</h3>
 <p>В реализации решения с помощью <em>Python</em>, воспользуемся генератором. Для этого определим функцию-генератор <code>fibonacci_sequence</code>, единственным параметром которой будет максимальное значение члена последовательности.</p>
