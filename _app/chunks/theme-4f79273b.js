@@ -1,1 +1,0 @@
-import{V as s,C as a,W as o}from"./vendor-2616681f.js";const n=[["light","(prefers-color-scheme: light)"]],c=o(n);function h(){const e=s(c).light?"light":"dark",{subscribe:t,update:i}=a(e);return{subscribe:t,change:()=>i(r=>r==="dark"?"light":"dark")}}const d=h();export{d as t};
