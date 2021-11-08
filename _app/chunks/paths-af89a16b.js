@@ -1,1 +1,0 @@
-import{W as t}from"./vendor-61f5c775.js";import{l as s}from"./i18n-8d408a16.js";const a=t(s,o=>`/${o}`),n=t(a,o=>`${o}/home`),p=t(a,o=>`${o}/blog`),r=t(a,o=>`${o}/gallery`),l=t(a,o=>`${o}/projects`),h=t(a,o=>`${o}/about`),$=o=>`/content/${o}`;export{p as a,r as b,l as c,h as d,$ as e,n as p};
