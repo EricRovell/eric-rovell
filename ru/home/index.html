@@ -25,7 +25,9 @@
 		<link rel="modulepreload" href="/_app/chunks/timeline.module-7f993441.js">
 		<link rel="modulepreload" href="/_app/chunks/stores-4b0f87d9.js">
 		<link rel="modulepreload" href="/_app/chunks/theme-11c76da9.js">
-		<link rel="modulepreload" href="/_app/pages/index.svelte-4e04b9b3.js">
+		<link rel="modulepreload" href="/_app/pages/[lang]/__layout.svelte-85e0d057.js">
+		<link rel="modulepreload" href="/_app/pages/[lang]/home.svelte-4c4e4b99.js">
+		<link rel="modulepreload" href="/_app/chunks/Datetime-2b477b98.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-9eec091b.css">
 		<link rel="stylesheet" href="/_app/assets/timeline.module-e36b8795.css">
@@ -45,13 +47,14 @@
 					error: null,
 					nodes: [
 						import("/_app/pages/__layout.svelte-887dc199.js"),
-						import("/_app/pages/index.svelte-4e04b9b3.js")
+						import("/_app/pages/[lang]/__layout.svelte-85e0d057.js"),
+						import("/_app/pages/[lang]/home.svelte-4c4e4b99.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002F",
+						path: "\u002Fru\u002Fhome",
 						query: new URLSearchParams(""),
-						params: {}
+						params: {lang:"ru"}
 					}
 				}
 			});
@@ -99,7 +102,34 @@
 </button>
     </section>
 </header>
-	<section label="content" class="content svelte-ljcnls"></section>
+	<section label="content" class="content svelte-ljcnls"><ol class="_timeline_1ahjh_1"><li class="_item_1ahjh_47"><div class="_marker_1ahjh_79"></div>
+	<article>
+<time datetime="1 нояб. 2021 г." class="svelte-gd9sbs">1 нояб. 2021 г.
+</time>
+		<h2>статья</h2>
+		<article class="svelte-t6h5jg"><header><a href="/content/anagram-hash-ru" class="svelte-t6h5jg"><h3 class="svelte-t6h5jg">Интересный алгоритм проверки слов на анаграмму</h3></a></header>
+	
+	
+</article>
+		</article></li><li class="_item_1ahjh_47"><div class="_marker_1ahjh_79"></div>
+	<article>
+<time datetime="11 июн. 2021 г." class="svelte-gd9sbs">11 июн. 2021 г.
+</time>
+		<h2>статья</h2>
+		<article class="svelte-t6h5jg"><header><a href="/content/problem-002-ru" class="svelte-t6h5jg"><h3 class="svelte-t6h5jg">Проект Эйлера #2: Чётные числа Фибоначчи</h3></a></header>
+	
+	
+</article>
+		</article></li><li class="_item_1ahjh_47"><div class="_marker_1ahjh_79"></div>
+	<article>
+<time datetime="10 июн. 2021 г." class="svelte-gd9sbs">10 июн. 2021 г.
+</time>
+		<h2>статья</h2>
+		<article class="svelte-t6h5jg"><header><a href="/content/problem-001-ru" class="svelte-t6h5jg"><h3 class="svelte-t6h5jg">Проект Эйлера #1: Числа, кратные 3 или 5</h3></a></header>
+	
+	
+</article>
+		</article></li></ol></section>
 	<footer class="svelte-1omxih3"><div class="wrapper svelte-1omxih3"><section label="info" class="svelte-1omxih3"><span>© 2021 eric/rovell, 0.3.0</span>
       <span>CC BY-NC-SA 4.0 Licence
       </span></section>
@@ -110,7 +140,7 @@
 
 
 
-			
+			<script type="application/json" data-type="svelte-data" data-url="/api/blog/posts.json?sort=-1">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"[{\"title\":\"Интересный алгоритм проверки слов на анаграмму\",\"lang\":\"ru\",\"date\":\"2021-11-01T00:00:00.000Z\",\"series\":\"algorithms\",\"slug\":\"anagram-hash-ru\"},{\"title\":\"Interesting anagram check algorithm\",\"lang\":\"en\",\"date\":\"2021-11-01T00:00:00.000Z\",\"series\":\"algorithms\",\"slug\":\"anagram-hash\"},{\"title\":\"Проект Эйлера #2: Чётные числа Фибоначчи\",\"lang\":\"ru\",\"date\":\"2021-06-11T00:00:00.000Z\",\"series\":\"project-euler\",\"slug\":\"problem-002-ru\"},{\"title\":\"Проект Эйлера #1: Числа, кратные 3 или 5\",\"lang\":\"ru\",\"date\":\"2021-06-10T00:00:00.000Z\",\"series\":\"project-euler\",\"slug\":\"problem-001-ru\"}]"}</script>
 		
 	</body>
 </html>
