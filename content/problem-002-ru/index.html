@@ -10,30 +10,30 @@
     <meta property="og:description" content="Personal blog about programming and photography.">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-		<title>Проект Эйлера #2: Чётные числа Фибоначчи</title><meta property="og:title" content="Проект Эйлера #2: Чётные числа Фибоначчи" data-svelte="svelte-16zstqs"><link rel="stylesheet" href="/styles/prism-light.css" data-svelte="svelte-16zstqs">
+		<title>Проект Эйлера #2: Чётные числа Фибоначчи</title><meta property="og:title" content="Проект Эйлера #2: Чётные числа Фибоначчи" data-svelte="svelte-1fi5dar">
 
 		
 
-		<link rel="modulepreload" href="/_app/start-66deb4e0.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-00375881.js">
+		<link rel="modulepreload" href="/_app/start-1e205e75.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-d52601ec.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-951c1ded.js">
-		<link rel="modulepreload" href="/_app/chunks/i18n-ebd8eaa2.js">
-		<link rel="modulepreload" href="/_app/chunks/timeline.module-0454efb8.js">
-		<link rel="modulepreload" href="/_app/chunks/default-0e7a8146.js">
-		<link rel="modulepreload" href="/_app/chunks/stores-5105a8d6.js">
-		<link rel="modulepreload" href="/_app/chunks/theme-fc6b43bb.js">
-		<link rel="modulepreload" href="/_app/pages/content/problem-002-ru.svx-14e9a452.js">
-		<link rel="modulepreload" href="/_app/chunks/LayoutProjectEuler-2db73933.js">
-		<link rel="modulepreload" href="/_app/chunks/katex.min-184f10e4.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-f65eeae0.js">
+		<link rel="modulepreload" href="/_app/chunks/i18n-ee1672a9.js">
+		<link rel="modulepreload" href="/_app/chunks/timeline.module-933e31ac.js">
+		<link rel="modulepreload" href="/_app/chunks/default-17235edf.js">
+		<link rel="modulepreload" href="/_app/chunks/Link-dd44ff48.js">
+		<link rel="modulepreload" href="/_app/chunks/stores-3bf6d763.js">
+		<link rel="modulepreload" href="/_app/pages/content/problem-002-ru.svx-dc9843ff.js">
+		<link rel="modulepreload" href="/_app/chunks/ProjectEuler-95afd4c0.js">
+		<link rel="modulepreload" href="/_app/chunks/katex.min-82fbe678.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-9eec091b.css">
 		<link rel="stylesheet" href="/_app/assets/timeline.module-2db61bce.css">
-		<link rel="stylesheet" href="/_app/assets/katex.min-419d70bb.css">
+		<link rel="stylesheet" href="/_app/assets/katex.min-73e0dcde.css">
 
 		<script type="module">
-			import { start } from "/_app/start-66deb4e0.js";
+			import { start } from "/_app/start-1e205e75.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -46,8 +46,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-951c1ded.js"),
-						import("/_app/pages/content/problem-002-ru.svx-14e9a452.js")
+						import("/_app/pages/__layout.svelte-f65eeae0.js"),
+						import("/_app/pages/content/problem-002-ru.svx-dc9843ff.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -103,15 +103,19 @@
 </header>
 	<section label="content" class="content svelte-ljcnls">
 
-<header class="_header_561pr_1"><h1>Проект Эйлера #2: Чётные числа Фибоначчи</h1></header>
-<article class="_article_561pr_23"><header class="_problem_561pr_73"><div slot="problem">Каждый новый член последовательности Фибоначчи получается из суммы двух предыдущих. Начиная с 1 и 2, первые 10 членов последовательности будут:
+
+<article class="_article_v54qv_5"><header class="_header_v54qv_17"><h1>Проект Эйлера #2: Чётные числа Фибоначчи</h1></header>
+	<main><section slot="problem">Каждый новый член последовательности Фибоначчи получается из суммы двух предыдущих. Начиная с 1 и 2, первые 10 членов последовательности будут:
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo separator="true">,</mo><mn>8</mn><mo separator="true">,</mo><mn>13</mn><mo separator="true">,</mo><mn>21</mn><mo separator="true">,</mo><mn>34</mn><mo separator="true">,</mo><mn>55</mn><mo separator="true">,</mo><mn>89</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">8</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">13</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">21</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">34</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">55</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">89</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">...</span></span></span></span></span><!-- HTML_TAG_END -->
-<p>Найти сумму всех чётных членов последовательности, значения которых не превышают четыре миллиона.</p></div></header>
-	<h2>Brute-force решение</h2>
+<p>Найти сумму всех чётных членов последовательности, значения которых не превышают четыре миллиона.</p></section>
+		<h2>Brute-force решение</h2>
 <p>Для начала отбросим тонкости и попробуем решить задачу максимально просто. Так как нам нужно сумму членов последовательности, удовлетворяющих некоторому условию, то необходимо сгенерировать саму последовательность.</p>
 <h3>Пример реализации на Python</h3>
-<p>В реализации решения с помощью <em>Python</em>, воспользуемся генератором. Для этого определим функцию-генератор <code>fibonacci_sequence</code>, единственным параметром которой будет максимальное значение члена последовательности.</p>
-<p>Далее, уже непосредственно для решения задачи определим функцию <code>even_fib_sum</code>, в которой с помощью <code>list comprehension</code> найдём сумму всех чётных значений генератора, не привышающих максимальное значение, переданное в единственный параметр функции.</p>
+<p>В реализации решения с помощью <em>Python</em>, воспользуемся генератором. Для этого определим функцию-генератор 
+<code>fibonacci_sequence</code>, единственным параметром которой будет максимальное значение члена последовательности.</p>
+<p>Далее, уже непосредственно для решения задачи определим функцию 
+<code>even_fib_sum</code>, в которой с помощью 
+<code>list comprehension</code> найдём сумму всех чётных значений генератора, не привышающих максимальное значение, переданное в единственный параметр функции.</p>
 <pre class="language-python"><!-- HTML_TAG_START --><code class="language-python"><span class="token keyword">def</span> <span class="token function">fibonacci_sequence</span><span class="token punctuation">(</span>limit<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">int</span><span class="token punctuation">:</span>
   a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span>
   <span class="token keyword">while</span> a <span class="token operator">&lt;</span> limit<span class="token punctuation">:</span>
@@ -144,8 +148,10 @@ end{aligned}</annotation></semantics></math></span><span class="katex-html" aria
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><mn>4</mn><mo>×</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>3</mn></mrow></msub><mo>+</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>6</mn></mrow></msub></mrow><annotation encoding="application/x-tex">F_{n} = 4 	imes F_{n-3} + F_{n-6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8917em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">3</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8917em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">6</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span></span><!-- HTML_TAG_END -->
 <p>Больше нет необходимости в проверке чётности значений, код становится проще и быстрее.</p>
 <h3>Пример реализации на Python</h3>
-<p>Аналогично предыдущему решению, используем генератор для получения последовательности Фибоначчи <code>fibonacci_sequence_even</code>. В этот раз он будет генерировать лишь чётные значения последовательности, поэтому впишем вместо 0 и 1: 2 и 8, как первые четные элементы и используем реккурентное соотношение, полученое в разборе выше.</p>
-<p>Для решения задачи снова определяем функцию <code>even_fib_sum</code>, суммируя значения генератора, с тем отличием, что больше нет необходимости в проверке чётности.</p>
+<p>Аналогично предыдущему решению, используем генератор для получения последовательности Фибоначчи 
+<code>fibonacci_sequence_even</code>. В этот раз он будет генерировать лишь чётные значения последовательности, поэтому впишем вместо 0 и 1: 2 и 8, как первые четные элементы и используем реккурентное соотношение, полученое в разборе выше.</p>
+<p>Для решения задачи снова определяем функцию 
+<code>even_fib_sum</code>, суммируя значения генератора, с тем отличием, что больше нет необходимости в проверке чётности.</p>
 <pre class="language-python"><!-- HTML_TAG_START --><code class="language-python"><span class="token keyword">def</span> <span class="token function">fibonacci_sequence_even</span><span class="token punctuation">(</span>limit<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">int</span><span class="token punctuation">:</span>
   a<span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">8</span>
   <span class="token keyword">while</span> a <span class="token operator">&lt;</span> limit<span class="token punctuation">:</span>
@@ -153,7 +159,15 @@ end{aligned}</annotation></semantics></math></span><span class="katex-html" aria
     a<span class="token punctuation">,</span> b <span class="token operator">=</span> b<span class="token punctuation">,</span> <span class="token number">4</span> <span class="token operator">*</span> b <span class="token operator">+</span> a
     
 <span class="token keyword">def</span> <span class="token function">even_fib_sum</span><span class="token punctuation">(</span>limit<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">int</span><span class="token punctuation">:</span>
-  <span class="token keyword">return</span> <span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">[</span> item <span class="token keyword">for</span> item <span class="token keyword">in</span> fibonacci_sequence_even<span class="token punctuation">(</span>limit<span class="token punctuation">)</span> <span class="token punctuation">]</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre></article></section>
+  <span class="token keyword">return</span> <span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">[</span> item <span class="token keyword">for</span> item <span class="token keyword">in</span> fibonacci_sequence_even<span class="token punctuation">(</span>limit<span class="token punctuation">)</span> <span class="token punctuation">]</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre></main>
+	<footer class="_footer_v54qv_45"><h2>Reference List</h2>
+			<ol><li><a href="https://projecteuler.net/problem=2" target="_blank" rel="noopener noreferrer" class=" svelte-1jvn1r9">Project Euler, Problem 2: Even Fibonacci numbers
+						
+</a>
+					</li><li><a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%A4%D0%B8%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D0%B8" target="_blank" rel="noopener noreferrer" class=" svelte-1jvn1r9">Числа Фибоначчи
+						
+</a>
+					</li></ol></footer></article></section>
 	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/en/blog" target="" rel="" sapper:prefetch class=" svelte-1jvn1r9">blog
             
 </a>

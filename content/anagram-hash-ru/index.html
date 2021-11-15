@@ -10,30 +10,30 @@
     <meta property="og:description" content="Personal blog about programming and photography.">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-		<title>Интересный алгоритм проверки слов на анаграмму</title><meta property="og:title" content="Интересный алгоритм проверки слов на анаграмму" data-svelte="svelte-16zstqs"><link rel="stylesheet" href="/styles/prism-light.css" data-svelte="svelte-16zstqs">
+		<title>Интересный алгоритм проверки слов на анаграмму</title><meta property="og:title" content="Интересный алгоритм проверки слов на анаграмму" data-svelte="svelte-1fi5dar">
 
 		
 
-		<link rel="modulepreload" href="/_app/start-66deb4e0.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-00375881.js">
+		<link rel="modulepreload" href="/_app/start-1e205e75.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-d52601ec.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-951c1ded.js">
-		<link rel="modulepreload" href="/_app/chunks/i18n-ebd8eaa2.js">
-		<link rel="modulepreload" href="/_app/chunks/timeline.module-0454efb8.js">
-		<link rel="modulepreload" href="/_app/chunks/default-0e7a8146.js">
-		<link rel="modulepreload" href="/_app/chunks/stores-5105a8d6.js">
-		<link rel="modulepreload" href="/_app/chunks/theme-fc6b43bb.js">
-		<link rel="modulepreload" href="/_app/pages/content/anagram-hash-ru.svx-877f7e96.js">
-		<link rel="modulepreload" href="/_app/chunks/Blogpost-47dad4e2.js">
-		<link rel="modulepreload" href="/_app/chunks/katex.min-184f10e4.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-f65eeae0.js">
+		<link rel="modulepreload" href="/_app/chunks/i18n-ee1672a9.js">
+		<link rel="modulepreload" href="/_app/chunks/timeline.module-933e31ac.js">
+		<link rel="modulepreload" href="/_app/chunks/default-17235edf.js">
+		<link rel="modulepreload" href="/_app/chunks/Link-dd44ff48.js">
+		<link rel="modulepreload" href="/_app/chunks/stores-3bf6d763.js">
+		<link rel="modulepreload" href="/_app/pages/content/anagram-hash-ru.svx-8d2c0d3f.js">
+		<link rel="modulepreload" href="/_app/chunks/Algorithm-4bbdf34b.js">
+		<link rel="modulepreload" href="/_app/chunks/katex.min-82fbe678.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-9eec091b.css">
 		<link rel="stylesheet" href="/_app/assets/timeline.module-2db61bce.css">
-		<link rel="stylesheet" href="/_app/assets/katex.min-419d70bb.css">
+		<link rel="stylesheet" href="/_app/assets/katex.min-73e0dcde.css">
 
 		<script type="module">
-			import { start } from "/_app/start-66deb4e0.js";
+			import { start } from "/_app/start-1e205e75.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -46,8 +46,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-951c1ded.js"),
-						import("/_app/pages/content/anagram-hash-ru.svx-877f7e96.js")
+						import("/_app/pages/__layout.svelte-f65eeae0.js"),
+						import("/_app/pages/content/anagram-hash-ru.svx-8d2c0d3f.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -103,8 +103,9 @@
 </header>
 	<section label="content" class="content svelte-ljcnls">
 
-<header class="_header_561pr_1"><h1>Интересный алгоритм проверки слов на анаграмму</h1></header>
-<article class="_article_561pr_23"><p>Для начала дадим определение:</p>
+
+<article class="_article_v54qv_5"><header class="_header_v54qv_17"><h1>Интересный алгоритм проверки слов на анаграмму</h1></header>
+	<main><p>Для начала дадим определение:</p>
 <dl><dt>Анаграмма</dt><dd>Литературный приём, состоящий в перестановке букв или звуков определённого слова или словосочетания, что в результате даёт другое слово или словосочетание.
 	</dd><dd>Например: нос - сон, лето - тело.
 	</dd></dl>
@@ -119,7 +120,15 @@
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mi>a</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>∗</mo><mn>2</mn><mo>∗</mo><mn>5</mn><mo>=</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">F(ear) = 3 * 2 * 5 = 30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">30</span></span></span></span></span><!-- HTML_TAG_END -->
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mi>a</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mi>F</mi><mo stretchy="false">(</mo><mi>a</mi><mi>r</mi><mi>e</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(ear) = F(are)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mord mathnormal">re</span><span class="mclose">)</span></span></span></span></span><!-- HTML_TAG_END -->
 <h2>Недостатки</h2>
-<p>Из недостатков сразу же приходит в голову сам факт использования простых чисел. Перед решением задачи необходимо сгенерировать и привести в соответствие простые числа, желательно в необходимом количестве. С другой стороны, необходимо учитывать размеры произведения для крайне длинных слов.</p></article></section>
+<p>Из недостатков сразу же приходит в голову сам факт использования простых чисел. Перед решением задачи необходимо сгенерировать и привести в соответствие простые числа, желательно в необходимом количестве. С другой стороны, необходимо учитывать размеры произведения для крайне длинных слов.</p></main>
+	<footer class="_footer_v54qv_45"><h2>Reference List</h2>
+			<ol><li><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0" target="_blank" rel="noopener noreferrer" class=" svelte-1jvn1r9">Анаграмма
+						
+</a>
+					</li><li><a href="https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0%D1%8F_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D1%8B" target="_blank" rel="noopener noreferrer" class=" svelte-1jvn1r9">Фундаментальная теорема алгебры
+						
+</a>
+					</li></ol></footer></article></section>
 	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/en/blog" target="" rel="" sapper:prefetch class=" svelte-1jvn1r9">blog
             
 </a>

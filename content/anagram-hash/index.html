@@ -10,30 +10,30 @@
     <meta property="og:description" content="Personal blog about programming and photography.">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-		<title>Interesting anagram check algorithm</title><meta property="og:title" content="Interesting anagram check algorithm" data-svelte="svelte-16zstqs"><link rel="stylesheet" href="/styles/prism-light.css" data-svelte="svelte-16zstqs">
+		<title>Interesting anagram check algorithm</title><meta property="og:title" content="Interesting anagram check algorithm" data-svelte="svelte-1fi5dar">
 
 		
 
-		<link rel="modulepreload" href="/_app/start-66deb4e0.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-00375881.js">
+		<link rel="modulepreload" href="/_app/start-1e205e75.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-d52601ec.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-951c1ded.js">
-		<link rel="modulepreload" href="/_app/chunks/i18n-ebd8eaa2.js">
-		<link rel="modulepreload" href="/_app/chunks/timeline.module-0454efb8.js">
-		<link rel="modulepreload" href="/_app/chunks/default-0e7a8146.js">
-		<link rel="modulepreload" href="/_app/chunks/stores-5105a8d6.js">
-		<link rel="modulepreload" href="/_app/chunks/theme-fc6b43bb.js">
-		<link rel="modulepreload" href="/_app/pages/content/anagram-hash.svx-0a61de9c.js">
-		<link rel="modulepreload" href="/_app/chunks/Blogpost-47dad4e2.js">
-		<link rel="modulepreload" href="/_app/chunks/katex.min-184f10e4.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-f65eeae0.js">
+		<link rel="modulepreload" href="/_app/chunks/i18n-ee1672a9.js">
+		<link rel="modulepreload" href="/_app/chunks/timeline.module-933e31ac.js">
+		<link rel="modulepreload" href="/_app/chunks/default-17235edf.js">
+		<link rel="modulepreload" href="/_app/chunks/Link-dd44ff48.js">
+		<link rel="modulepreload" href="/_app/chunks/stores-3bf6d763.js">
+		<link rel="modulepreload" href="/_app/pages/content/anagram-hash.svx-478a1c10.js">
+		<link rel="modulepreload" href="/_app/chunks/Algorithm-4bbdf34b.js">
+		<link rel="modulepreload" href="/_app/chunks/katex.min-82fbe678.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-9eec091b.css">
 		<link rel="stylesheet" href="/_app/assets/timeline.module-2db61bce.css">
-		<link rel="stylesheet" href="/_app/assets/katex.min-419d70bb.css">
+		<link rel="stylesheet" href="/_app/assets/katex.min-73e0dcde.css">
 
 		<script type="module">
-			import { start } from "/_app/start-66deb4e0.js";
+			import { start } from "/_app/start-1e205e75.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -46,8 +46,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-951c1ded.js"),
-						import("/_app/pages/content/anagram-hash.svx-0a61de9c.js")
+						import("/_app/pages/__layout.svelte-f65eeae0.js"),
+						import("/_app/pages/content/anagram-hash.svx-478a1c10.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -103,8 +103,9 @@
 </header>
 	<section label="content" class="content svelte-ljcnls">
 
-<header class="_header_561pr_1"><h1>Interesting anagram check algorithm</h1></header>
-<article class="_article_561pr_23"><p>Let’s define what <em>anagram</em> is:</p>
+
+<article class="_article_v54qv_5"><header class="_header_v54qv_17"><h1>Interesting anagram check algorithm</h1></header>
+	<main><p>Let’s define what <em>anagram</em> is:</p>
 <dl><dt>Anagram</dt><dd>Two strings are said to be anagram if we can form one string by arranging the characters of another string.
 	</dd><dd>For example: race - care.
 	</dd></dl>
@@ -119,7 +120,15 @@
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mi>a</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>∗</mo><mn>2</mn><mo>∗</mo><mn>5</mn><mo>=</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">F(ear) = 3 * 2 * 5 = 30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">30</span></span></span></span></span><!-- HTML_TAG_END -->
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mi>a</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mi>F</mi><mo stretchy="false">(</mo><mi>a</mi><mi>r</mi><mi>e</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(ear) = F(are)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mord mathnormal">re</span><span class="mclose">)</span></span></span></span></span><!-- HTML_TAG_END -->
 <h2>Limitations</h2>
-<p>As the prime numbers are the main ingridient of this approach, these primes should be generated first, and it would be better to generate the bare minimum. Also, in case of really long words the value of the product should be considered.</p></article></section>
+<p>As the prime numbers are the main ingridient of this approach, these primes should be generated first, and it would be better to generate the bare minimum. Also, in case of really long words the value of the product should be considered.</p></main>
+	<footer class="_footer_v54qv_45"><h2>Reference List</h2>
+			<ol><li><a href="https://en.wikipedia.org/wiki/Anagram" target="_blank" rel="noopener noreferrer" class=" svelte-1jvn1r9">Anagram
+						
+</a>
+					</li><li><a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic" target="_blank" rel="noopener noreferrer" class=" svelte-1jvn1r9">Fundamental Theorem of Arithmetic
+						
+</a>
+					</li></ol></footer></article></section>
 	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/en/blog" target="" rel="" sapper:prefetch class=" svelte-1jvn1r9">blog
             
 </a>

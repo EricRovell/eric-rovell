@@ -10,30 +10,30 @@
     <meta property="og:description" content="Personal blog about programming and photography.">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-		<title>Проект Эйлера #1: Числа, кратные 3 или 5</title><meta property="og:title" content="Проект Эйлера #1: Числа, кратные 3 или 5" data-svelte="svelte-16zstqs"><link rel="stylesheet" href="/styles/prism-light.css" data-svelte="svelte-16zstqs">
+		<title>Проект Эйлера #1: Числа, кратные 3 или 5</title><meta property="og:title" content="Проект Эйлера #1: Числа, кратные 3 или 5" data-svelte="svelte-1fi5dar">
 
 		
 
-		<link rel="modulepreload" href="/_app/start-66deb4e0.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-00375881.js">
+		<link rel="modulepreload" href="/_app/start-1e205e75.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-d52601ec.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-951c1ded.js">
-		<link rel="modulepreload" href="/_app/chunks/i18n-ebd8eaa2.js">
-		<link rel="modulepreload" href="/_app/chunks/timeline.module-0454efb8.js">
-		<link rel="modulepreload" href="/_app/chunks/default-0e7a8146.js">
-		<link rel="modulepreload" href="/_app/chunks/stores-5105a8d6.js">
-		<link rel="modulepreload" href="/_app/chunks/theme-fc6b43bb.js">
-		<link rel="modulepreload" href="/_app/pages/content/problem-001-ru.svx-620918f3.js">
-		<link rel="modulepreload" href="/_app/chunks/LayoutProjectEuler-2db73933.js">
-		<link rel="modulepreload" href="/_app/chunks/katex.min-184f10e4.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-f65eeae0.js">
+		<link rel="modulepreload" href="/_app/chunks/i18n-ee1672a9.js">
+		<link rel="modulepreload" href="/_app/chunks/timeline.module-933e31ac.js">
+		<link rel="modulepreload" href="/_app/chunks/default-17235edf.js">
+		<link rel="modulepreload" href="/_app/chunks/Link-dd44ff48.js">
+		<link rel="modulepreload" href="/_app/chunks/stores-3bf6d763.js">
+		<link rel="modulepreload" href="/_app/pages/content/problem-001-ru.svx-4a3f91e4.js">
+		<link rel="modulepreload" href="/_app/chunks/ProjectEuler-95afd4c0.js">
+		<link rel="modulepreload" href="/_app/chunks/katex.min-82fbe678.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-9eec091b.css">
 		<link rel="stylesheet" href="/_app/assets/timeline.module-2db61bce.css">
-		<link rel="stylesheet" href="/_app/assets/katex.min-419d70bb.css">
+		<link rel="stylesheet" href="/_app/assets/katex.min-73e0dcde.css">
 
 		<script type="module">
-			import { start } from "/_app/start-66deb4e0.js";
+			import { start } from "/_app/start-1e205e75.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -46,8 +46,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-951c1ded.js"),
-						import("/_app/pages/content/problem-001-ru.svx-620918f3.js")
+						import("/_app/pages/__layout.svelte-f65eeae0.js"),
+						import("/_app/pages/content/problem-001-ru.svx-4a3f91e4.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -103,10 +103,11 @@
 </header>
 	<section label="content" class="content svelte-ljcnls">
 
-<header class="_header_561pr_1"><h1>Проект Эйлера #1: Числа, кратные 3 или 5</h1></header>
-<article class="_article_561pr_23"><header class="_problem_561pr_73"><div slot="problem">Если выписать все натуральные числа меньше 10, кратные 3 или 5, то получим 3, 5, 6 и 9. Сумма этих чисел равна 23.
-<p>Найдите сумму всех чисел меньше 1000, кратных 3 или 5.</p></div></header>
-	<h2>Вычислительный подход</h2>
+
+<article class="_article_v54qv_5"><header class="_header_v54qv_17"><h1>Проект Эйлера #1: Числа, кратные 3 или 5</h1></header>
+	<main><section slot="problem">Если выписать все натуральные числа меньше 10, кратные 3 или 5, то получим 3, 5, 6 и 9. Сумма этих чисел равна 23.
+<p>Найдите сумму всех чисел меньше 1000, кратных 3 или 5.</p></section>
+		<h2>Вычислительный подход</h2>
 <p>Попробуем решить задачу, вычислив сумму всех множителей напрямую, всё же тысяча - смехотворный объем работы для современной вычислительной техники.</p>
 <p>Для решения задачи создадим переменную для хранения значения суммы кратных чисел. С помощью цикла, совершим обход натуральных чисел, проверяя делимость на 3 или 5 остатком от деления. Если остаток равен нулю - добавляем значение к нашей переменной. После окончания обхода задача решена.</p>
 <h3>Пример реализации на Python</h3>
@@ -145,7 +146,15 @@
   <span class="token keyword">return</span> divisor <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> last_multiple<span class="token punctuation">)</span> <span class="token operator">*</span> last_multiple <span class="token operator">/</span> <span class="token number">2</span>
 
 multiples_sum<span class="token punctuation">(</span>limit<span class="token punctuation">)</span><span class="token punctuation">:</span>
-  <span class="token keyword">return</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span> <span class="token operator">+</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span> <span class="token operator">-</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">*</span> <span class="token number">5</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre></article></section>
+  <span class="token keyword">return</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span> <span class="token operator">+</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span> <span class="token operator">-</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">*</span> <span class="token number">5</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre></main>
+	<footer class="_footer_v54qv_45"><h2>Reference List</h2>
+			<ol><li><a href="https://projecteuler.net/problem=1" target="_blank" rel="noopener noreferrer" class=" svelte-1jvn1r9">Project Euler, Problem 1: Multiples of 3 or 5
+						
+</a>
+					</li><li><a href="https://projecteuler.net/problem=1" target="_blank" rel="noopener noreferrer" class=" svelte-1jvn1r9">Project Euler, Problem 1: Multiples of 3 or 5
+						
+</a>
+					</li></ol></footer></article></section>
 	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/en/blog" target="" rel="" sapper:prefetch class=" svelte-1jvn1r9">blog
             
 </a>
