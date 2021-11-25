@@ -14,7 +14,7 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-95f82979.js">
+		<link rel="modulepreload" href="/_app/start-b08cc0d8.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-1f561ed5.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
@@ -24,16 +24,16 @@
 		<link rel="modulepreload" href="/_app/chunks/default-924a211b.js">
 		<link rel="modulepreload" href="/_app/chunks/Link-aba92704.js">
 		<link rel="modulepreload" href="/_app/chunks/stores-a51c5b0f.js">
-		<link rel="modulepreload" href="/_app/pages/content/problem-001-ru.svx-5afb3a91.js">
-		<link rel="modulepreload" href="/_app/chunks/ProjectEuler-d930a1a2.js">
-		<link rel="modulepreload" href="/_app/chunks/katex.min-82fbe678.js">
+		<link rel="modulepreload" href="/_app/pages/content/problem-001-ru.svx-c0d4b724.js">
+		<link rel="modulepreload" href="/_app/chunks/ProjectEuler-98380253.js">
+		<link rel="modulepreload" href="/_app/chunks/katex.min-901af895.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-a764fe11.css">
 		<link rel="stylesheet" href="/_app/assets/timeline.module-6abb18e0.css">
-		<link rel="stylesheet" href="/_app/assets/katex.min-0a3cb20b.css">
+		<link rel="stylesheet" href="/_app/assets/katex.min-0068eb35.css">
 
 		<script type="module">
-			import { start } from "/_app/start-95f82979.js";
+			import { start } from "/_app/start-b08cc0d8.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -47,7 +47,7 @@
 					error: null,
 					nodes: [
 						import("/_app/pages/__layout.svelte-bc42a35a.js"),
-						import("/_app/pages/content/problem-001-ru.svx-5afb3a91.js")
+						import("/_app/pages/content/problem-001-ru.svx-c0d4b724.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -104,7 +104,7 @@
 	<section label="content" class="content svelte-k3k1e3">
 
 
-<article class="_article_v54qv_5"><header class="_header_v54qv_17"><h1>Проект Эйлера #1: Числа, кратные 3 или 5</h1></header>
+<article class="_article_1556v_5"><header class="_header_1556v_17"><h1>Проект Эйлера #1: Числа, кратные 3 или 5</h1></header>
 	<main><section slot="problem">Если выписать все натуральные числа меньше 10, кратные 3 или 5, то получим 3, 5, 6 и 9. Сумма этих чисел равна 23.
 <p>Найдите сумму всех чисел меньше 1000, кратных 3 или 5.</p></section>
 		<h2>Вычислительный подход</h2>
@@ -146,15 +146,10 @@
   <span class="token keyword">return</span> divisor <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> last_multiple<span class="token punctuation">)</span> <span class="token operator">*</span> last_multiple <span class="token operator">/</span> <span class="token number">2</span>
 
 multiples_sum<span class="token punctuation">(</span>limit<span class="token punctuation">)</span><span class="token punctuation">:</span>
-  <span class="token keyword">return</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span> <span class="token operator">+</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span> <span class="token operator">-</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">*</span> <span class="token number">5</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre></main>
-	<footer class="_footer_v54qv_45"><h2>Reference List</h2>
-			<ol><li><a href="https://projecteuler.net/problem=1" target="_blank" rel="noopener noreferrer" class=" svelte-1milrus">Project Euler, Problem 1: Multiples of 3 or 5
-						
-</a>
-					</li><li><a href="https://projecteuler.net/problem=1" target="_blank" rel="noopener noreferrer" class=" svelte-1milrus">Project Euler, Problem 1: Multiples of 3 or 5
-						
-</a>
-					</li></ol></footer></article></section>
+  <span class="token keyword">return</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span> <span class="token operator">+</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span> <span class="token operator">-</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">*</span> <span class="token number">5</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
+<h2>Ссылки</h2>
+<ol><li><a href="https://projecteuler.net/problem=1" target="_blank" rel="nofollow" class=" svelte-1milrus">Project Euler, Problem 1: Multiples of 3 or 5
+</a></li></ol></main></article></section>
 	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/en/blog" target="" rel="" sapper:prefetch class=" svelte-1milrus">blog
             
 </a>

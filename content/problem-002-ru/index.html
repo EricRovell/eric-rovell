@@ -14,7 +14,7 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-95f82979.js">
+		<link rel="modulepreload" href="/_app/start-b08cc0d8.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-1f561ed5.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
@@ -24,16 +24,16 @@
 		<link rel="modulepreload" href="/_app/chunks/default-924a211b.js">
 		<link rel="modulepreload" href="/_app/chunks/Link-aba92704.js">
 		<link rel="modulepreload" href="/_app/chunks/stores-a51c5b0f.js">
-		<link rel="modulepreload" href="/_app/pages/content/problem-002-ru.svx-20db9c33.js">
-		<link rel="modulepreload" href="/_app/chunks/ProjectEuler-d930a1a2.js">
-		<link rel="modulepreload" href="/_app/chunks/katex.min-82fbe678.js">
+		<link rel="modulepreload" href="/_app/pages/content/problem-002-ru.svx-63f9e5a6.js">
+		<link rel="modulepreload" href="/_app/chunks/ProjectEuler-98380253.js">
+		<link rel="modulepreload" href="/_app/chunks/katex.min-901af895.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-a764fe11.css">
 		<link rel="stylesheet" href="/_app/assets/timeline.module-6abb18e0.css">
-		<link rel="stylesheet" href="/_app/assets/katex.min-0a3cb20b.css">
+		<link rel="stylesheet" href="/_app/assets/katex.min-0068eb35.css">
 
 		<script type="module">
-			import { start } from "/_app/start-95f82979.js";
+			import { start } from "/_app/start-b08cc0d8.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -47,7 +47,7 @@
 					error: null,
 					nodes: [
 						import("/_app/pages/__layout.svelte-bc42a35a.js"),
-						import("/_app/pages/content/problem-002-ru.svx-20db9c33.js")
+						import("/_app/pages/content/problem-002-ru.svx-63f9e5a6.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -104,7 +104,7 @@
 	<section label="content" class="content svelte-k3k1e3">
 
 
-<article class="_article_v54qv_5"><header class="_header_v54qv_17"><h1>Проект Эйлера #2: Чётные числа Фибоначчи</h1></header>
+<article class="_article_1556v_5"><header class="_header_1556v_17"><h1>Проект Эйлера #2: Чётные числа Фибоначчи</h1></header>
 	<main><section slot="problem">Каждый новый член последовательности Фибоначчи получается из суммы двух предыдущих. Начиная с 1 и 2, первые 10 членов последовательности будут:
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo separator="true">,</mo><mn>8</mn><mo separator="true">,</mo><mn>13</mn><mo separator="true">,</mo><mn>21</mn><mo separator="true">,</mo><mn>34</mn><mo separator="true">,</mo><mn>55</mn><mo separator="true">,</mo><mn>89</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">8</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">13</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">21</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">34</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">55</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">89</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">...</span></span></span></span></span><!-- HTML_TAG_END -->
 <p>Найти сумму всех чётных членов последовательности, значения которых не превышают четыре миллиона.</p></section>
@@ -159,15 +159,12 @@ end{aligned}</annotation></semantics></math></span><span class="katex-html" aria
     a<span class="token punctuation">,</span> b <span class="token operator">=</span> b<span class="token punctuation">,</span> <span class="token number">4</span> <span class="token operator">*</span> b <span class="token operator">+</span> a
     
 <span class="token keyword">def</span> <span class="token function">even_fib_sum</span><span class="token punctuation">(</span>limit<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">int</span><span class="token punctuation">:</span>
-  <span class="token keyword">return</span> <span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">[</span> item <span class="token keyword">for</span> item <span class="token keyword">in</span> fibonacci_sequence_even<span class="token punctuation">(</span>limit<span class="token punctuation">)</span> <span class="token punctuation">]</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre></main>
-	<footer class="_footer_v54qv_45"><h2>Reference List</h2>
-			<ol><li><a href="https://projecteuler.net/problem=2" target="_blank" rel="noopener noreferrer" class=" svelte-1milrus">Project Euler, Problem 2: Even Fibonacci numbers
-						
-</a>
-					</li><li><a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%A4%D0%B8%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D0%B8" target="_blank" rel="noopener noreferrer" class=" svelte-1milrus">Числа Фибоначчи
-						
-</a>
-					</li></ol></footer></article></section>
+  <span class="token keyword">return</span> <span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">[</span> item <span class="token keyword">for</span> item <span class="token keyword">in</span> fibonacci_sequence_even<span class="token punctuation">(</span>limit<span class="token punctuation">)</span> <span class="token punctuation">]</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
+<h2>Ссылки</h2>
+<ol><li><a href="https://projecteuler.net/problem=2" target="_blank" rel="nofollow" class=" svelte-1milrus">Project Euler, Problem 2: Even Fibonacci numbers
+</a></li>
+<li><a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%A4%D0%B8%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D0%B8" target="_blank" rel="nofollow" class=" svelte-1milrus">Числа Фибоначчи
+</a></li></ol></main></article></section>
 	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/en/blog" target="" rel="" sapper:prefetch class=" svelte-1milrus">blog
             
 </a>
