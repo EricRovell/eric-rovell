@@ -14,26 +14,26 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-b08cc0d8.js">
+		<link rel="modulepreload" href="/_app/start-d2426bbf.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-1f561ed5.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-bc42a35a.js">
-		<link rel="modulepreload" href="/_app/chunks/i18n-f3e80449.js">
-		<link rel="modulepreload" href="/_app/chunks/timeline.module-0544b479.js">
-		<link rel="modulepreload" href="/_app/chunks/default-924a211b.js">
-		<link rel="modulepreload" href="/_app/chunks/Link-aba92704.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-3ce04212.js">
+		<link rel="modulepreload" href="/_app/chunks/i18n-3732cc7d.js">
+		<link rel="modulepreload" href="/_app/chunks/timeline.module-ce2b1fe8.js">
+		<link rel="modulepreload" href="/_app/chunks/default-61e0bedf.js">
+		<link rel="modulepreload" href="/_app/chunks/Link-113eb781.js">
 		<link rel="modulepreload" href="/_app/chunks/stores-a51c5b0f.js">
-		<link rel="modulepreload" href="/_app/pages/content/problem-002-ru.svx-63f9e5a6.js">
-		<link rel="modulepreload" href="/_app/chunks/ProjectEuler-98380253.js">
-		<link rel="modulepreload" href="/_app/chunks/katex.min-901af895.js">
+		<link rel="modulepreload" href="/_app/pages/content/problem-002-ru.svx-66ab2fdb.js">
+		<link rel="modulepreload" href="/_app/chunks/ProjectEuler-f3136485.js">
+		<link rel="modulepreload" href="/_app/chunks/katex.min-81799f2d.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-a764fe11.css">
-		<link rel="stylesheet" href="/_app/assets/timeline.module-6abb18e0.css">
-		<link rel="stylesheet" href="/_app/assets/katex.min-0068eb35.css">
+		<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-e565d35f.css">
+		<link rel="stylesheet" href="/_app/assets/timeline.module-ed8b46cf.css">
+		<link rel="stylesheet" href="/_app/assets/katex.min-c0ab08c0.css">
 
 		<script type="module">
-			import { start } from "/_app/start-b08cc0d8.js";
+			import { start } from "/_app/start-d2426bbf.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -46,8 +46,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-bc42a35a.js"),
-						import("/_app/pages/content/problem-002-ru.svx-63f9e5a6.js")
+						import("/_app/pages/__layout.svelte-3ce04212.js"),
+						import("/_app/pages/content/problem-002-ru.svx-66ab2fdb.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -63,7 +63,7 @@
 		
 
 
-<div id="app" class="svelte-k3k1e3">
+<div id="app" class="svelte-1cro8kw">
 <header class="svelte-1yqmpng"><section label="logo" class="svelte-1yqmpng"><a class="logo" href="/en/home" slot="logo">
 
 
@@ -101,16 +101,34 @@
 </button>
     </section>
 </header>
-	<section label="content" class="content svelte-k3k1e3">
+	<section label="content" class="content svelte-1cro8kw">
 
 
-<article class="_article_1556v_5"><header class="_header_1556v_17"><h1>Проект Эйлера #2: Чётные числа Фибоначчи</h1></header>
-	<main><section slot="problem">Каждый новый член последовательности Фибоначчи получается из суммы двух предыдущих. Начиная с 1 и 2, первые 10 членов последовательности будут:
+<article class="_body_1f2va_5"><header class="_header_1f2va_29"><h1>Проект Эйлера #2: Чётные числа Фибоначчи</h1></header>
+	<aside><nav class="svelte-sgea57"><h2 class="svelte-sgea57">Table of contents</h2>
+	<ol class="svelte-sgea57"><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#brute-force-решение" rel="" class=" svelte-1milrus">Brute-force решение
+				
+</a>
+			</li><li style="--toc-level: 1;" class="svelte-sgea57"><a href="#пример-реализации-на-python" rel="" class=" svelte-1milrus">Пример реализации на Python
+				
+</a>
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#чётная-последовательность-фибоначчи" rel="" class=" svelte-1milrus">Чётная последовательность Фибоначчи
+				
+</a>
+			</li><li style="--toc-level: 1;" class="svelte-sgea57"><a href="#пример-реализации-на-python" rel="" class=" svelte-1milrus">Пример реализации на Python
+				
+</a>
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#ссылки" rel="" class=" svelte-1milrus">Ссылки
+				
+</a>
+			</li></ol>
+</nav></aside>
+	<main class="_article_1f2va_45"><section slot="problem">Каждый новый член последовательности Фибоначчи получается из суммы двух предыдущих. Начиная с 1 и 2, первые 10 членов последовательности будут:
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>1</mn><mo separator="true">,</mo><mn>2</mn><mo separator="true">,</mo><mn>3</mn><mo separator="true">,</mo><mn>5</mn><mo separator="true">,</mo><mn>8</mn><mo separator="true">,</mo><mn>13</mn><mo separator="true">,</mo><mn>21</mn><mo separator="true">,</mo><mn>34</mn><mo separator="true">,</mo><mn>55</mn><mo separator="true">,</mo><mn>89</mn><mo separator="true">,</mo><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">8</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">13</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">21</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">34</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">55</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">89</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">...</span></span></span></span></span><!-- HTML_TAG_END -->
 <p>Найти сумму всех чётных членов последовательности, значения которых не превышают четыре миллиона.</p></section>
-		<h2>Brute-force решение</h2>
+		<h2 id="brute-force-решение">Brute-force решение</h2>
 <p>Для начала отбросим тонкости и попробуем решить задачу максимально просто. Так как нам нужно сумму членов последовательности, удовлетворяющих некоторому условию, то необходимо сгенерировать саму последовательность.</p>
-<h3>Пример реализации на Python</h3>
+<h3 id="пример-реализации-на-python">Пример реализации на Python</h3>
 <p>В реализации решения с помощью <em>Python</em>, воспользуемся генератором. Для этого определим функцию-генератор 
 <code>fibonacci_sequence</code>, единственным параметром которой будет максимальное значение члена последовательности.</p>
 <p>Далее, уже непосредственно для решения задачи определим функцию 
@@ -124,7 +142,7 @@
     
 <span class="token keyword">def</span> <span class="token function">even_fib_sum</span><span class="token punctuation">(</span>limit<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">int</span><span class="token punctuation">:</span>
   <span class="token keyword">return</span> <span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">[</span> item <span class="token keyword">for</span> item <span class="token keyword">in</span> fibonacci_sequence<span class="token punctuation">(</span>limit<span class="token punctuation">)</span> <span class="token keyword">if</span> item <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
-<h2>Чётная последовательность Фибоначчи</h2>
+<h2 id="чётная-последовательность-фибоначчи">Чётная последовательность Фибоначчи</h2>
 <p>Основная проблема предыдущего решения в том, что мы генерировали все значения последовательности, хотя для решения достаточно лишь чётных по значению. Попробуем взглянуть на чётные члены последовательности:</p>
 <p>0, 1, 1, <strong>2</strong>, 3, 5, <strong>8</strong>, 13, 21, <strong>34</strong>, 55, 89, <strong>144</strong>, …</p>
 <p>Не забывая, что счёт индексов начинется с нуля, заметим, что все чётные элементы повторяются с постоянным интервалом, каждое третье число Фибоначчи чётное. Выходит, что можно попробовать выразить закономерность для генерации лишь чётных числе Фибоначчи, используя реккурентную формулу. Для этого необходимо выразить (<span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></span>) через (<span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>3</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(n - 3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span></span>) и (<span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(n - 6)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">6</span><span class="mclose">)</span></span></span></span></span>).</p>
@@ -147,7 +165,7 @@ end{aligned}</annotation></semantics></math></span><span class="katex-html" aria
 <p>Итого, мы получили реккурентное выражение исключительно для чётных элементов последовательности Фибоначчи:</p>
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>F</mi><mi>n</mi></msub><mo>=</mo><mn>4</mn><mo>×</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>3</mn></mrow></msub><mo>+</mo><msub><mi>F</mi><mrow><mi>n</mi><mo>−</mo><mn>6</mn></mrow></msub></mrow><annotation encoding="application/x-tex">F_{n} = 4 	imes F_{n-3} + F_{n-6}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8917em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">3</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8917em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mbin mtight">−</span><span class="mord mtight">6</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span></span></span></span></span><!-- HTML_TAG_END -->
 <p>Больше нет необходимости в проверке чётности значений, код становится проще и быстрее.</p>
-<h3>Пример реализации на Python</h3>
+<h3 id="пример-реализации-на-python-1">Пример реализации на Python</h3>
 <p>Аналогично предыдущему решению, используем генератор для получения последовательности Фибоначчи 
 <code>fibonacci_sequence_even</code>. В этот раз он будет генерировать лишь чётные значения последовательности, поэтому впишем вместо 0 и 1: 2 и 8, как первые четные элементы и используем реккурентное соотношение, полученое в разборе выше.</p>
 <p>Для решения задачи снова определяем функцию 
@@ -160,15 +178,15 @@ end{aligned}</annotation></semantics></math></span><span class="katex-html" aria
     
 <span class="token keyword">def</span> <span class="token function">even_fib_sum</span><span class="token punctuation">(</span>limit<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token builtin">int</span><span class="token punctuation">:</span>
   <span class="token keyword">return</span> <span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">[</span> item <span class="token keyword">for</span> item <span class="token keyword">in</span> fibonacci_sequence_even<span class="token punctuation">(</span>limit<span class="token punctuation">)</span> <span class="token punctuation">]</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
-<h2>Ссылки</h2>
+<h2 id="ссылки">Ссылки</h2>
 <ol><li><a href="https://projecteuler.net/problem=2" target="_blank" rel="nofollow" class=" svelte-1milrus">Project Euler, Problem 2: Even Fibonacci numbers
 </a></li>
 <li><a href="https://ru.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%B0_%D0%A4%D0%B8%D0%B1%D0%BE%D0%BD%D0%B0%D1%87%D1%87%D0%B8" target="_blank" rel="nofollow" class=" svelte-1milrus">Числа Фибоначчи
 </a></li></ol></main></article></section>
-	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/en/blog" target="" rel="" sapper:prefetch class=" svelte-1milrus">blog
+	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/en/blog" rel="" class=" svelte-1milrus">blog
             
 </a>
-          </li><li><a href="/en/gallery" target="" rel="" tabindex="-1" sapper:prefetch class="disabled svelte-1milrus">gallery
+          </li><li><a href="/en/gallery" rel="" tabindex="-1" class="disabled svelte-1milrus">gallery
             
 </a>
           </li><li><a href="https://github.com/ericrovell/ericrovell.me#readme" target="_blank" rel="noopener noreferrer" class=" svelte-1milrus">source
@@ -177,10 +195,10 @@ end{aligned}</annotation></semantics></math></span><span class="katex-html" aria
           </li><li><a href="https://github.com/EricRovell/ericrovell.me/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class=" svelte-1milrus">licence
             
 </a>
-          </li><li><a href="" target="" rel="" tabindex="-1" sapper:prefetch class="disabled svelte-1milrus">privacy
+          </li><li><a href="" rel="" tabindex="-1" class="disabled svelte-1milrus">privacy
             
 </a>
-          </li><li><a href="/en/about" target="" rel="" sapper:prefetch class=" svelte-1milrus">about
+          </li><li><a href="/en/about" rel="" class=" svelte-1milrus">about
             
 </a>
           </li></ul></nav>

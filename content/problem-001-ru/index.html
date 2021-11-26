@@ -14,26 +14,26 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-b08cc0d8.js">
+		<link rel="modulepreload" href="/_app/start-d2426bbf.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-1f561ed5.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-bc42a35a.js">
-		<link rel="modulepreload" href="/_app/chunks/i18n-f3e80449.js">
-		<link rel="modulepreload" href="/_app/chunks/timeline.module-0544b479.js">
-		<link rel="modulepreload" href="/_app/chunks/default-924a211b.js">
-		<link rel="modulepreload" href="/_app/chunks/Link-aba92704.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-3ce04212.js">
+		<link rel="modulepreload" href="/_app/chunks/i18n-3732cc7d.js">
+		<link rel="modulepreload" href="/_app/chunks/timeline.module-ce2b1fe8.js">
+		<link rel="modulepreload" href="/_app/chunks/default-61e0bedf.js">
+		<link rel="modulepreload" href="/_app/chunks/Link-113eb781.js">
 		<link rel="modulepreload" href="/_app/chunks/stores-a51c5b0f.js">
-		<link rel="modulepreload" href="/_app/pages/content/problem-001-ru.svx-c0d4b724.js">
-		<link rel="modulepreload" href="/_app/chunks/ProjectEuler-98380253.js">
-		<link rel="modulepreload" href="/_app/chunks/katex.min-901af895.js">
+		<link rel="modulepreload" href="/_app/pages/content/problem-001-ru.svx-e9c97afd.js">
+		<link rel="modulepreload" href="/_app/chunks/ProjectEuler-f3136485.js">
+		<link rel="modulepreload" href="/_app/chunks/katex.min-81799f2d.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-a764fe11.css">
-		<link rel="stylesheet" href="/_app/assets/timeline.module-6abb18e0.css">
-		<link rel="stylesheet" href="/_app/assets/katex.min-0068eb35.css">
+		<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-e565d35f.css">
+		<link rel="stylesheet" href="/_app/assets/timeline.module-ed8b46cf.css">
+		<link rel="stylesheet" href="/_app/assets/katex.min-c0ab08c0.css">
 
 		<script type="module">
-			import { start } from "/_app/start-b08cc0d8.js";
+			import { start } from "/_app/start-d2426bbf.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -46,8 +46,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-bc42a35a.js"),
-						import("/_app/pages/content/problem-001-ru.svx-c0d4b724.js")
+						import("/_app/pages/__layout.svelte-3ce04212.js"),
+						import("/_app/pages/content/problem-001-ru.svx-e9c97afd.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -63,7 +63,7 @@
 		
 
 
-<div id="app" class="svelte-k3k1e3">
+<div id="app" class="svelte-1cro8kw">
 <header class="svelte-1yqmpng"><section label="logo" class="svelte-1yqmpng"><a class="logo" href="/en/home" slot="logo">
 
 
@@ -101,16 +101,37 @@
 </button>
     </section>
 </header>
-	<section label="content" class="content svelte-k3k1e3">
+	<section label="content" class="content svelte-1cro8kw">
 
 
-<article class="_article_1556v_5"><header class="_header_1556v_17"><h1>Проект Эйлера #1: Числа, кратные 3 или 5</h1></header>
-	<main><section slot="problem">Если выписать все натуральные числа меньше 10, кратные 3 или 5, то получим 3, 5, 6 и 9. Сумма этих чисел равна 23.
+<article class="_body_1f2va_5"><header class="_header_1f2va_29"><h1>Проект Эйлера #1: Числа, кратные 3 или 5</h1></header>
+	<aside><nav class="svelte-sgea57"><h2 class="svelte-sgea57">Table of contents</h2>
+	<ol class="svelte-sgea57"><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#вычислительный-подход" rel="" class=" svelte-1milrus">Вычислительный подход
+				
+</a>
+			</li><li style="--toc-level: 1;" class="svelte-sgea57"><a href="#пример-реализации-на-python" rel="" class=" svelte-1milrus">Пример реализации на Python
+				
+</a>
+			</li><li style="--toc-level: 1;" class="svelte-sgea57"><a href="#пример-реализации-на-javascript" rel="" class=" svelte-1milrus">Пример реализации на JavaScript
+				
+</a>
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#поиск-оптимального-решения" rel="" class=" svelte-1milrus">Поиск оптимального решения
+				
+</a>
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#реализация-на-python" rel="" class=" svelte-1milrus">Реализация на Python
+				
+</a>
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#ссылки" rel="" class=" svelte-1milrus">Ссылки
+				
+</a>
+			</li></ol>
+</nav></aside>
+	<main class="_article_1f2va_45"><section slot="problem">Если выписать все натуральные числа меньше 10, кратные 3 или 5, то получим 3, 5, 6 и 9. Сумма этих чисел равна 23.
 <p>Найдите сумму всех чисел меньше 1000, кратных 3 или 5.</p></section>
-		<h2>Вычислительный подход</h2>
+		<h2 id="вычислительный-подход">Вычислительный подход</h2>
 <p>Попробуем решить задачу, вычислив сумму всех множителей напрямую, всё же тысяча - смехотворный объем работы для современной вычислительной техники.</p>
 <p>Для решения задачи создадим переменную для хранения значения суммы кратных чисел. С помощью цикла, совершим обход натуральных чисел, проверяя делимость на 3 или 5 остатком от деления. Если остаток равен нулю - добавляем значение к нашей переменной. После окончания обхода задача решена.</p>
-<h3>Пример реализации на Python</h3>
+<h3 id="пример-реализации-на-python">Пример реализации на Python</h3>
 <pre class="language-python"><!-- HTML_TAG_START --><code class="language-python"><span class="token keyword">def</span> <span class="token function">multiples_sum</span><span class="token punctuation">(</span>limit<span class="token punctuation">)</span><span class="token punctuation">:</span>
   total <span class="token operator">=</span> <span class="token number">0</span>
   <span class="token keyword">for</span> number <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>limit<span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -119,7 +140,7 @@
   <span class="token keyword">return</span> number</code><!-- HTML_TAG_END --></pre>
 <p>Можно попробовать решить задачу с помощью <strong>list comprehension</strong>:</p>
 <pre class="language-python"><!-- HTML_TAG_START --><code class="language-python">  multiples_sum <span class="token operator">=</span> <span class="token keyword">lambda</span> limit<span class="token punctuation">:</span> <span class="token builtin">sum</span><span class="token punctuation">(</span><span class="token punctuation">[</span> number <span class="token keyword">for</span> number <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>limit<span class="token punctuation">)</span> <span class="token keyword">if</span> number <span class="token operator">%</span> <span class="token number">3</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">or</span> number <span class="token operator">%</span> <span class="token number">5</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">]</span><span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
-<h3>Пример реализации на JavaScript</h3>
+<h3 id="пример-реализации-на-javascript">Пример реализации на JavaScript</h3>
 <pre class="language-js"><!-- HTML_TAG_START --><code class="language-js"><span class="token keyword">function</span> <span class="token function">multiplesSum</span><span class="token punctuation">(</span><span class="token parameter">limit</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
   <span class="token keyword">let</span> total <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
   <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> number <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> number <span class="token operator">&lt;</span> limit<span class="token punctuation">;</span> number<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
@@ -129,7 +150,7 @@
   <span class="token punctuation">&#125;</span>
   <span class="token keyword">return</span> total<span class="token punctuation">;</span>
 <span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre>
-<h2>Поиск оптимального решения</h2>
+<h2 id="поиск-оптимального-решения">Поиск оптимального решения</h2>
 <p>Пусть прямолинейное решение и работает молниеносно, сложность всё же составляет <strong>O(n)</strong>, другими словами, чем больше поле поиска, тем больше проверок. Попробуем решить поставленную задачу другим, более оптимальным способом со сложностью <strong>O(1)</strong>. В этом нам поможет школьный курс алгебры!</p>
 <p>Выписав кратные для 3, заметим, что они образуют <em>арифметическую прогрессию</em>:</p>
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>3</mn><mo separator="true">,</mo><mn>6</mn><mo separator="true">,</mo><mn>9</mn><mo separator="true">,</mo><mn>12</mn><mo separator="true">,</mo><mn>15</mn><mo separator="true">,</mo><mn>18...</mn></mrow><annotation encoding="application/x-tex">3, 6, 9, 12, 15, 18...</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">6</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">9</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">12</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">15</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">18...</span></span></span></span></span><!-- HTML_TAG_END -->
@@ -140,20 +161,20 @@
 <p>С помощью формулы суммы, можем найти сумму всех кратных чисел 3 и 5 по отдельности, а потом сложить. Верно? Не совсем. Торопясь, можно упустить небольшую деталь. Некоторые числа являются кратными как для 3, так и для 5. Например, 15. Говоря на математическом языке, множества кратных чисел имеют пересечение. Взяв сумму двух прогрессий, некоторые значения дублируются.</p>
 <p>Воспользуемся тем же оружием, найдем сумму прогрессии чисел, кратных 3 и 5. Полученную сумму вычтем из общей суммы.</p>
 <p>В итоге, мы получили математическое выражение для решения задачи. Сложность алгоритма <strong>O(1)</strong>!</p>
-<h2>Реализация на Python</h2>
+<h2 id="реализация-на-python">Реализация на Python</h2>
 <pre class="language-python"><!-- HTML_TAG_START --><code class="language-python">arithmetic_sum<span class="token punctuation">(</span>divisor<span class="token punctuation">,</span> limit<span class="token punctuation">)</span><span class="token punctuation">:</span>
   last_multiple <span class="token operator">=</span> floor<span class="token punctuation">(</span><span class="token punctuation">(</span>limit <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">/</span> divisor<span class="token punctuation">)</span>
   <span class="token keyword">return</span> divisor <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">+</span> last_multiple<span class="token punctuation">)</span> <span class="token operator">*</span> last_multiple <span class="token operator">/</span> <span class="token number">2</span>
 
 multiples_sum<span class="token punctuation">(</span>limit<span class="token punctuation">)</span><span class="token punctuation">:</span>
   <span class="token keyword">return</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span> <span class="token operator">+</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span> <span class="token operator">-</span> arithmetic_sum<span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">*</span> <span class="token number">5</span><span class="token punctuation">,</span> limit<span class="token punctuation">)</span></code><!-- HTML_TAG_END --></pre>
-<h2>Ссылки</h2>
+<h2 id="ссылки">Ссылки</h2>
 <ol><li><a href="https://projecteuler.net/problem=1" target="_blank" rel="nofollow" class=" svelte-1milrus">Project Euler, Problem 1: Multiples of 3 or 5
 </a></li></ol></main></article></section>
-	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/en/blog" target="" rel="" sapper:prefetch class=" svelte-1milrus">blog
+	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/en/blog" rel="" class=" svelte-1milrus">blog
             
 </a>
-          </li><li><a href="/en/gallery" target="" rel="" tabindex="-1" sapper:prefetch class="disabled svelte-1milrus">gallery
+          </li><li><a href="/en/gallery" rel="" tabindex="-1" class="disabled svelte-1milrus">gallery
             
 </a>
           </li><li><a href="https://github.com/ericrovell/ericrovell.me#readme" target="_blank" rel="noopener noreferrer" class=" svelte-1milrus">source
@@ -162,10 +183,10 @@ multiples_sum<span class="token punctuation">(</span>limit<span class="token pun
           </li><li><a href="https://github.com/EricRovell/ericrovell.me/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class=" svelte-1milrus">licence
             
 </a>
-          </li><li><a href="" target="" rel="" tabindex="-1" sapper:prefetch class="disabled svelte-1milrus">privacy
+          </li><li><a href="" rel="" tabindex="-1" class="disabled svelte-1milrus">privacy
             
 </a>
-          </li><li><a href="/en/about" target="" rel="" sapper:prefetch class=" svelte-1milrus">about
+          </li><li><a href="/en/about" rel="" class=" svelte-1milrus">about
             
 </a>
           </li></ul></nav>
