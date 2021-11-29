@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eric Rovell</title>
+    <meta name="description" content="Personal blog about programming and photography.">
+    <meta property="og:title" content="Eric Rovell">
+    <meta property="og:description" content="Personal blog about programming and photography.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+		<title>Interesting anagram check algorithm</title><meta property="og:title" content="Interesting anagram check algorithm" data-svelte="svelte-1fi5dar">
+
+		
+
+		<link rel="modulepreload" href="/_app/start-681c17dc.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-31f3363f.js">
+		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-84904abb.js">
+		<link rel="modulepreload" href="/_app/chunks/i18n-79a2adbb.js">
+		<link rel="modulepreload" href="/_app/chunks/timeline.module-248f6660.js">
+		<link rel="modulepreload" href="/_app/chunks/default-7d9ef598.js">
+		<link rel="modulepreload" href="/_app/chunks/Link-f211c347.js">
+		<link rel="modulepreload" href="/_app/chunks/stores-38402aac.js">
+		<link rel="modulepreload" href="/_app/pages/_lang_/__layout.svelte-cdea4623.js">
+		<link rel="modulepreload" href="/_app/pages/_lang_/blog/_slug_.svelte-54940566.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-16235700.css">
+		<link rel="stylesheet" href="/_app/assets/timeline.module-3764ba36.css">
+
+		<script type="module">
+			import { start } from "/_app/start-681c17dc.js";
+			start({
+				target: document.querySelector("body"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-84904abb.js"),
+						import("/_app/pages/_lang_/__layout.svelte-cdea4623.js"),
+						import("/_app/pages/_lang_/blog/_slug_.svelte-54940566.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fru\u002Fblog\u002Fanagram-hash",
+						query: new URLSearchParams(""),
+						params: {lang:"ru",slug:"anagram-hash"}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		
+
+
+<div id="app" class="svelte-vsndk3">
+<header class="svelte-1yqmpng"><section label="logo" class="svelte-1yqmpng"><a class="logo" href="/ru/home" slot="logo">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="--icon-margin: 0;  " width="1em" height="1em" role="presentation" class="svelte-1c65o49"><path d="M42.14,100h1.19a2.93,2.93,0,0,0,3-2.89V63.42L67.86,96.88a3,3,0,0,0,4.1.91l1-.61a2.86,2.86,0,0,0,.94-4L50.15,56.34a8.52,8.52,0,0,0,1.59-5,8.66,8.66,0,0,0-1.62-5L33.81,50.25a8.32,8.32,0,0,0-.07,1.12,8.61,8.61,0,0,0,1.59,5L11.57,93.21a2.85,2.85,0,0,0,.94,4l1,.61a3,3,0,0,0,4.1-.91L39.17,63.42V97.11A2.93,2.93,0,0,0,42.14,100ZM6.68,48.63c.13,0,13.87-3.26,13.87-3.26A33.61,33.61,0,0,1,16.72,36a33.16,33.16,0,0,1-1-10L2.18,29.15C0,29.67-.65,34.43.7,39.8,2,44.85,4.56,48.63,6.68,48.63Zm34-33.11L22.29,19.88a2.94,2.94,0,0,0-1.72,1.31,6.79,6.79,0,0,0-.88,2,10.86,10.86,0,0,0-.37,1.87,27.9,27.9,0,0,0,.85,10.1,28.61,28.61,0,0,0,4,9.33A12.05,12.05,0,0,0,25.44,46a7.18,7.18,0,0,0,1.72,1.38,3.33,3.33,0,0,0,1.58.45,2.1,2.1,0,0,0,.56-.07l17.53-4.17.92-.22a38.69,38.69,0,0,1-6-13.45,38.65,38.65,0,0,1-1.11-14.18C40.63,15.66,40.64,15.59,40.66,15.52ZM99.91,31.67,92.5,2.21A3,3,0,0,0,89.61,0a2.92,2.92,0,0,0-.71.08l-41,9.78a3,3,0,0,0-1.33.69,5.65,5.65,0,0,0-1.48,2.14,10.68,10.68,0,0,0-.61,1.93c-.85,3.6-.66,8.85.76,14.46s3.84,10.57,6.36,13.36a11.11,11.11,0,0,0,1.54,1.42,2.75,2.75,0,0,0,.44.28,5.22,5.22,0,0,0,3.78.49l40.41-9.48A2.86,2.86,0,0,0,99.91,31.67Z"></path></svg>
+      <span>eric/rovell</span></a></section>
+  <section label="navigation" class="svelte-1yqmpng">
+<nav class="svelte-m4mder"><ul class="svelte-m4mder">
+<li class="svelte-gu141u"><a class="menu-item underline-bottom svelte-gu141u" style="--menu-item-decoration-color: var(--color-primary); --menu-item-decoration-size: 0.2em" href="/ru/home">главная</a>
+</li>
+        
+<li class="svelte-gu141u"><a class="menu-item underline-bottom svelte-gu141u" style="--menu-item-decoration-color: var(--color-primary); --menu-item-decoration-size: 0.2em" href="/ru/blog">блог</a>
+</li>
+        
+<li class="svelte-gu141u"><a class="menu-item underline-bottom svelte-gu141u" style="--menu-item-decoration-color: var(--color-primary); --menu-item-decoration-size: 0.2em" href="/ru/gallery">галерея</a>
+</li>
+        
+<li class="svelte-gu141u"><a class="menu-item underline-bottom svelte-gu141u" style="--menu-item-decoration-color: var(--color-primary); --menu-item-decoration-size: 0.2em" href="/ru/projects">проекты</a>
+</li>
+        
+<li class="svelte-gu141u"><a class="menu-item underline-bottom svelte-gu141u disabled" tabindex="-1" style="--menu-item-decoration-color: var(--color-primary); --menu-item-decoration-size: 0.2em" href="/ru/about">о себе</a>
+</li></ul>
+</nav>
+    </section>
+  <section label="controls" class="svelte-1yqmpng"><nav class="lang-select svelte-1upp41h">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="--icon-margin: 0; --icon-color: var(--color-primary); " width="1em" height="1em" role="presentation" class="svelte-1c65o49"><path d="M50.25,0h-.08C22.61,0,0,22.31,0,49.8A49.31,49.31,0,0,0,4,69.26,50.89,50.89,0,0,0,30.74,96a49.3,49.3,0,0,0,19.45,4h0C77.86,100,100,77.21,100,49.8A49.77,49.77,0,0,0,50.25,0ZM40.49,6.92A58,58,0,0,0,28.34,23.44H14.75A44.48,44.48,0,0,1,40.49,6.92ZM11,29.26H25.83a61,61,0,0,0-3.57,17.61H6A43.46,43.46,0,0,1,11,29.26ZM11.1,70.7A44,44,0,0,1,6,52.73H22.24a60.25,60.25,0,0,0,3.6,18Zm3.77,5.86H28.34A58,58,0,0,0,40.48,93.07,44.4,44.4,0,0,1,14.87,76.56ZM28.11,52.73H47.26v18H32.15A53.71,53.71,0,0,1,28.11,52.73Zm19.16,38.5A52.87,52.87,0,0,1,35,76.56H47.27V91.23Zm0-44.36H28.13a53.85,53.85,0,0,1,4-17.57H47.27Zm0-23.43H35A52.87,52.87,0,0,1,47.27,8.77ZM89.05,29.3a43.55,43.55,0,0,1,5,17.57H78.13A60.38,60.38,0,0,0,74.55,29.3Zm-3.72-5.86H72.05A57.76,57.76,0,0,0,59.92,7,44.07,44.07,0,0,1,85.33,23.44ZM53.12,8.77A53,53,0,0,1,65.38,23.44H53.12Zm0,20.53H68.24a53.85,53.85,0,0,1,4,17.57H53.12ZM72.28,52.7a53.94,53.94,0,0,1-4,18H53.12v-18ZM53.12,91.23V76.52H65.38A53.18,53.18,0,0,1,53.12,91.23ZM59.94,93A58,58,0,0,0,72.05,76.52H85.21A44.1,44.1,0,0,1,59.94,93ZM74.55,70.7a60.51,60.51,0,0,0,3.6-18H94a44.47,44.47,0,0,1-5.1,18Z"></path></svg>
+	<ul class="svelte-1upp41h"><li><a href="/en/blog/anagram-hash" class="svelte-1upp41h">en</a>
+			</li><li><a href="/ru/blog/anagram-hash" class="svelte-1upp41h active">ru</a>
+			</li></ul>
+</nav>  
+      
+<button title="Click to switch theme" class="switcher svelte-1ro5526">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="indicator auto svelte-q6f2xr"><defs><mask class="mask svelte-q6f2xr" id="theme-toggle-mask"><rect fill="white" x="0" y="0" width="100" height="100"></rect><circle fill="black" cx="50" cy="50" r="12.5" class="svelte-q6f2xr"></circle></mask></defs><circle class="center svelte-q6f2xr" mask="url(#theme-toggle-mask)" cx="50" cy="50" r="25"></circle><g class="rays svelte-q6f2xr"><circle cx="90" cy="50" r="5" class="svelte-q6f2xr"></circle><circle cx="78.2842712474619" cy="78.2842712474619" r="5" class="svelte-q6f2xr"></circle><circle cx="50" cy="90" r="5" class="svelte-q6f2xr"></circle><circle cx="21.7157287525381" cy="78.2842712474619" r="5" class="svelte-q6f2xr"></circle><circle cx="10" cy="50.00000000000001" r="5" class="svelte-q6f2xr"></circle><circle cx="21.71572875253809" cy="21.7157287525381" r="5" class="svelte-q6f2xr"></circle><circle cx="49.99999999999999" cy="10" r="5" class="svelte-q6f2xr"></circle><circle cx="78.2842712474619" cy="21.71572875253809" r="5" class="svelte-q6f2xr"></circle></g></svg>
+</button>
+    </section>
+</header>
+	<section label="content" class="content svelte-vsndk3">
+
+
+<article class="_body_1f2va_5"><header class="_header_1f2va_29"><h1>Interesting anagram check algorithm</h1></header>
+	<aside class="_sidebar_1f2va_65"><nav class="svelte-sgea57"><h2 class="svelte-sgea57">Содержание</h2>
+	<ol class="svelte-sgea57"><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#algorithm" rel="" class=" svelte-1milrus">Algorithm
+				
+</a>
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#example" rel="" class=" svelte-1milrus">Example
+				
+</a>
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#limitations" rel="" class=" svelte-1milrus">Limitations
+				
+</a>
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#references" rel="" class=" svelte-1milrus">References
+				
+</a>
+			</li></ol>
+</nav></aside>
+	<main class="_article_1f2va_45"><p>Let’s define what <em>anagram</em> is:</p>
+<dl><dt>Anagram</dt><dd>Two strings are said to be anagram if we can form one string by arranging the characters of another string.
+	</dd><dd>For example: race - care.
+	</dd></dl>
+<p>Anagram check is quite common exercise. One of the most straightforward ways to solve this problem is to compare sorted input strings. There is one more way to solve it, it may not be the most optimal option, but it is quite interesting.</p>
+<h2 id="algorithm">Algorithm</h2>
+<ol><li>Map each of the symbols to a distinct prime number.</li>
+<li>Multiply the characters of each word.</li>
+<li>Since every number is a <strong>prime</strong> of a <strong>unique</strong> product of primes <em>(fundamental theorem of arithmetic)</em>, two words are anagrams of their products are the same.</li></ol>
+<h2 id="example">Example</h2>
+<p>Let <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">F(a) = 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></span>, <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">F(e) = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span></span> и <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">F(r) = 5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span></span>, then:</p>
+<!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>a</mi><mi>r</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>∗</mo><mn>5</mn><mo>∗</mo><mn>3</mn><mo>=</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">F(are) = 2 * 5 * 3 = 30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mord mathnormal">re</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">30</span></span></span></span></span><!-- HTML_TAG_END -->
+<!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mi>a</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>∗</mo><mn>2</mn><mo>∗</mo><mn>5</mn><mo>=</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">F(ear) = 3 * 2 * 5 = 30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">30</span></span></span></span></span><!-- HTML_TAG_END -->
+<!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mi>a</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mi>F</mi><mo stretchy="false">(</mo><mi>a</mi><mi>r</mi><mi>e</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(ear) = F(are)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mord mathnormal">re</span><span class="mclose">)</span></span></span></span></span><!-- HTML_TAG_END -->
+<h2 id="limitations">Limitations</h2>
+<p>As the prime numbers are the main ingridient of this approach, these primes should be generated first, and it would be better to generate the bare minimum. Also, in case of really long words the value of the product should be considered.</p>
+<h2 id="references">References</h2>
+<ol><li><a href="https://en.wikipedia.org/wiki/Anagram" target="_blank" rel="nofollow" class=" svelte-1milrus">Anagram
+</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic" target="_blank" rel="nofollow" class=" svelte-1milrus">Fundamental Theorem of Arithmetic
+</a></li></ol></main></article></section>
+	<footer class="svelte-bp6iss"><div class="wrapper svelte-bp6iss"><nav class="svelte-bp6iss"><ul class="svelte-bp6iss"><li><a href="/ru/blog" rel="" class=" svelte-1milrus">блог
+            
+</a>
+          </li><li><a href="/ru/gallery" rel="" class=" svelte-1milrus">галерея
+            
+</a>
+          </li><li><a href="https://github.com/ericrovell/ericrovell.me#readme" target="_blank" rel="noopener noreferrer" class=" svelte-1milrus">Исходный код
+            
+</a>
+          </li><li><a href="https://github.com/EricRovell/ericrovell.me/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" class=" svelte-1milrus">Лицензия
+            
+</a>
+          </li><li><a href="" rel="" tabindex="-1" class="disabled svelte-1milrus">Приватность
+            
+</a>
+          </li><li><a href="/ru/about" rel="" class=" svelte-1milrus">о себе
+            
+</a>
+          </li></ul></nav>
+    <section label="user" class="svelte-bp6iss"><span>© 2021 eric/rovell, v.0.6.0</span>
+      <nav class="lang-select svelte-1upp41h">
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="--icon-margin: 0; --icon-color: var(--color-primary); " width="1em" height="1em" role="presentation" class="svelte-1c65o49"><path d="M50.25,0h-.08C22.61,0,0,22.31,0,49.8A49.31,49.31,0,0,0,4,69.26,50.89,50.89,0,0,0,30.74,96a49.3,49.3,0,0,0,19.45,4h0C77.86,100,100,77.21,100,49.8A49.77,49.77,0,0,0,50.25,0ZM40.49,6.92A58,58,0,0,0,28.34,23.44H14.75A44.48,44.48,0,0,1,40.49,6.92ZM11,29.26H25.83a61,61,0,0,0-3.57,17.61H6A43.46,43.46,0,0,1,11,29.26ZM11.1,70.7A44,44,0,0,1,6,52.73H22.24a60.25,60.25,0,0,0,3.6,18Zm3.77,5.86H28.34A58,58,0,0,0,40.48,93.07,44.4,44.4,0,0,1,14.87,76.56ZM28.11,52.73H47.26v18H32.15A53.71,53.71,0,0,1,28.11,52.73Zm19.16,38.5A52.87,52.87,0,0,1,35,76.56H47.27V91.23Zm0-44.36H28.13a53.85,53.85,0,0,1,4-17.57H47.27Zm0-23.43H35A52.87,52.87,0,0,1,47.27,8.77ZM89.05,29.3a43.55,43.55,0,0,1,5,17.57H78.13A60.38,60.38,0,0,0,74.55,29.3Zm-3.72-5.86H72.05A57.76,57.76,0,0,0,59.92,7,44.07,44.07,0,0,1,85.33,23.44ZM53.12,8.77A53,53,0,0,1,65.38,23.44H53.12Zm0,20.53H68.24a53.85,53.85,0,0,1,4,17.57H53.12ZM72.28,52.7a53.94,53.94,0,0,1-4,18H53.12v-18ZM53.12,91.23V76.52H65.38A53.18,53.18,0,0,1,53.12,91.23ZM59.94,93A58,58,0,0,0,72.05,76.52H85.21A44.1,44.1,0,0,1,59.94,93ZM74.55,70.7a60.51,60.51,0,0,0,3.6-18H94a44.47,44.47,0,0,1-5.1,18Z"></path></svg>
+	<ul class="svelte-1upp41h"><li><a href="/en/blog/anagram-hash" class="svelte-1upp41h">en</a>
+			</li><li><a href="/ru/blog/anagram-hash" class="svelte-1upp41h active">ru</a>
+			</li></ul>
+</nav></section></div>
+</footer>
+</div>
+
+
+
+			
+		
+	</body>
+</html>
