@@ -5,11 +5,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="color-scheme" content="dark light">
-		<title>Interesting anagram check algorithm</title><meta name="author" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="language" content="ru" data-svelte="svelte-1viaqva"><meta name="description" content="Exploring interesting solution to check a word for anagram using math." data-svelte="svelte-1viaqva"><meta name="keywords" content="algorithm, math, anagram" data-svelte="svelte-1viaqva"><meta name="language" content="en" data-svelte="svelte-1viaqva"><meta name="og:title" content="Interesting anagram check algorithm" data-svelte="svelte-1viaqva"><meta name="og:description" content="Exploring interesting solution to check a word for anagram using math." data-svelte="svelte-1viaqva"><meta name="og:locale" content="en" data-svelte="svelte-1viaqva"><meta name="og:type" content="article" data-svelte="svelte-1viaqva"><meta name="og:tag" content="algorithm, math, anagram" data-svelte="svelte-1viaqva"><meta name="og:section" content="algorithms" data-svelte="svelte-1viaqva"><meta name="og:site_name" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="og:author" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="og:url" content="https://www.undefined/ru/blog/anagram-hash" data-svelte="svelte-1viaqva"><meta name="og:article:published_time" content="2021-11-01T00:00:00.000Z" data-svelte="svelte-1viaqva"><meta name="og:article:modified_time" content="2021-11-28T02:21:00.000Z" data-svelte="svelte-1viaqva"><meta name="twitter:card" content="summary" data-svelte="svelte-1viaqva"><meta name="twitter:title" content="Interesting anagram check algorithm" data-svelte="svelte-1viaqva"><meta name="twitter:description" content="Exploring interesting solution to check a word for anagram using math." data-svelte="svelte-1viaqva"><meta name="twitter:url" content="https://www.undefined/ru/blog/anagram-hash" data-svelte="svelte-1viaqva">
+		<title>Интересный алгоритм проверки слов на анаграмму</title><meta name="author" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="language" content="ru" data-svelte="svelte-1viaqva"><meta name="description" content="Познакомимся с альтернативным способом проверить слово на анаграмму с помощью математики." data-svelte="svelte-1viaqva"><meta name="keywords" content="алгоритм, математика, анаграмма" data-svelte="svelte-1viaqva"><meta name="language" content="ru" data-svelte="svelte-1viaqva"><meta name="og:title" content="Интересный алгоритм проверки слов на анаграмму" data-svelte="svelte-1viaqva"><meta name="og:description" content="Познакомимся с альтернативным способом проверить слово на анаграмму с помощью математики." data-svelte="svelte-1viaqva"><meta name="og:locale" content="ru" data-svelte="svelte-1viaqva"><meta name="og:type" content="article" data-svelte="svelte-1viaqva"><meta name="og:tag" content="алгоритм, математика, анаграмма" data-svelte="svelte-1viaqva"><meta name="og:section" content="algorithms" data-svelte="svelte-1viaqva"><meta name="og:site_name" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="og:author" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="og:url" content="https://www.undefined/ru/blog/ru-anagram-hash" data-svelte="svelte-1viaqva"><meta name="og:article:published_time" content="2021-11-01T00:00:00.000Z" data-svelte="svelte-1viaqva"><meta name="og:article:modified_time" content="2021-11-30T03:12:00.000Z" data-svelte="svelte-1viaqva"><meta name="twitter:card" content="summary" data-svelte="svelte-1viaqva"><meta name="twitter:title" content="Интересный алгоритм проверки слов на анаграмму" data-svelte="svelte-1viaqva"><meta name="twitter:description" content="Познакомимся с альтернативным способом проверить слово на анаграмму с помощью математики." data-svelte="svelte-1viaqva"><meta name="twitter:url" content="https://www.undefined/ru/blog/ru-anagram-hash" data-svelte="svelte-1viaqva">
 
 		
 
-		<link rel="modulepreload" href="/_app/start-692162a5.js">
+		<link rel="modulepreload" href="/_app/start-d8cd2463.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-614e74e4.js">
 		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
@@ -20,13 +20,13 @@
 		<link rel="modulepreload" href="/_app/chunks/Link-e060064e.js">
 		<link rel="modulepreload" href="/_app/pages/_lang_/__layout.svelte-192943a0.js">
 		<link rel="modulepreload" href="/_app/chunks/Meta-97f7a04b.js">
-		<link rel="modulepreload" href="/_app/pages/_lang_/blog/_slug_.svelte-2db3f387.js">
+		<link rel="modulepreload" href="/_app/pages/_lang_/blog/_lang_-_slug_.svelte-6a26430a.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
 		<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-9933f25f.css">
 		<link rel="stylesheet" href="/_app/assets/timeline.module-b4f110d0.css">
 
 		<script type="module">
-			import { start } from "/_app/start-692162a5.js";
+			import { start } from "/_app/start-d8cd2463.js";
 			start({
 				target: document.querySelector("body"),
 				paths: {"base":"","assets":""},
@@ -41,11 +41,11 @@
 					nodes: [
 						import("/_app/pages/__layout.svelte-6e02650a.js"),
 						import("/_app/pages/_lang_/__layout.svelte-192943a0.js"),
-						import("/_app/pages/_lang_/blog/_slug_.svelte-2db3f387.js")
+						import("/_app/pages/_lang_/blog/_lang_-_slug_.svelte-6a26430a.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
-						path: "\u002Fru\u002Fblog\u002Fanagram-hash",
+						path: "\u002Fru\u002Fblog\u002Fru-anagram-hash",
 						query: new URLSearchParams(""),
 						params: {lang:"ru",slug:"anagram-hash"}
 					}
@@ -82,8 +82,8 @@
 
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="--icon-margin: 0; --icon-color: var(--color-primary); " width="1em" height="1em" role="presentation" class="svelte-1c65o49"><path d="M50.25,0h-.08C22.61,0,0,22.31,0,49.8A49.31,49.31,0,0,0,4,69.26,50.89,50.89,0,0,0,30.74,96a49.3,49.3,0,0,0,19.45,4h0C77.86,100,100,77.21,100,49.8A49.77,49.77,0,0,0,50.25,0ZM40.49,6.92A58,58,0,0,0,28.34,23.44H14.75A44.48,44.48,0,0,1,40.49,6.92ZM11,29.26H25.83a61,61,0,0,0-3.57,17.61H6A43.46,43.46,0,0,1,11,29.26ZM11.1,70.7A44,44,0,0,1,6,52.73H22.24a60.25,60.25,0,0,0,3.6,18Zm3.77,5.86H28.34A58,58,0,0,0,40.48,93.07,44.4,44.4,0,0,1,14.87,76.56ZM28.11,52.73H47.26v18H32.15A53.71,53.71,0,0,1,28.11,52.73Zm19.16,38.5A52.87,52.87,0,0,1,35,76.56H47.27V91.23Zm0-44.36H28.13a53.85,53.85,0,0,1,4-17.57H47.27Zm0-23.43H35A52.87,52.87,0,0,1,47.27,8.77ZM89.05,29.3a43.55,43.55,0,0,1,5,17.57H78.13A60.38,60.38,0,0,0,74.55,29.3Zm-3.72-5.86H72.05A57.76,57.76,0,0,0,59.92,7,44.07,44.07,0,0,1,85.33,23.44ZM53.12,8.77A53,53,0,0,1,65.38,23.44H53.12Zm0,20.53H68.24a53.85,53.85,0,0,1,4,17.57H53.12ZM72.28,52.7a53.94,53.94,0,0,1-4,18H53.12v-18ZM53.12,91.23V76.52H65.38A53.18,53.18,0,0,1,53.12,91.23ZM59.94,93A58,58,0,0,0,72.05,76.52H85.21A44.1,44.1,0,0,1,59.94,93ZM74.55,70.7a60.51,60.51,0,0,0,3.6-18H94a44.47,44.47,0,0,1-5.1,18Z"></path></svg>
-	<ul class="svelte-1upp41h"><li><a href="/en/blog/anagram-hash" class="svelte-1upp41h">en</a>
-			</li><li><a href="/ru/blog/anagram-hash" class="svelte-1upp41h active">ru</a>
+	<ul class="svelte-1upp41h"><li><a href="/en/blog/ru-anagram-hash" class="svelte-1upp41h">en</a>
+			</li><li><a href="/ru/blog/ru-anagram-hash" class="svelte-1upp41h active">ru</a>
 			</li></ul>
 </nav>  
       
@@ -97,48 +97,48 @@
 
 
 
-<article class="_body_fhccb_5"><header class="_header_ux4i6_1"><h1>Interesting anagram check algorithm</h1>
-	<p>Exploring interesting solution to check a word for anagram using math.</p>
-	<footer><ul><li>algorithm</li><li> math</li><li> anagram</li></ul>
+<article class="_body_fhccb_5"><header class="_header_ux4i6_1"><h1>Интересный алгоритм проверки слов на анаграмму</h1>
+	<p>Познакомимся с альтернативным способом проверить слово на анаграмму с помощью математики.</p>
+	<footer><ul><li>алгоритм</li><li> математика</li><li> анаграмма</li></ul>
 		<span>Последнее обновление: 
-<time datetime="28 нояб. 2021 г." class="svelte-1ugyifs">28 нояб. 2021 г.
+<time datetime="30 нояб. 2021 г." class="svelte-1ugyifs">30 нояб. 2021 г.
 </time></span></footer></header>
 	<aside class="_sidebar_fhccb_53"><nav class="svelte-sgea57"><h2 class="svelte-sgea57">Содержание</h2>
-	<ol class="svelte-sgea57"><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#algorithm" rel="" class=" svelte-wqaj6b">Algorithm
+	<ol class="svelte-sgea57"><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#алгоритм" rel="" class=" svelte-wqaj6b">Алгоритм
 				
 </a>
-			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#example" rel="" class=" svelte-wqaj6b">Example
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#пример" rel="" class=" svelte-wqaj6b">Пример
 				
 </a>
-			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#limitations" rel="" class=" svelte-wqaj6b">Limitations
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#недостатки" rel="" class=" svelte-wqaj6b">Недостатки
 				
 </a>
-			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#references" rel="" class=" svelte-wqaj6b">References
+			</li><li style="--toc-level: 0;" class="svelte-sgea57"><a href="#ссылки" rel="" class=" svelte-wqaj6b">Ссылки
 				
 </a>
 			</li></ol>
 </nav></aside>
 	<main class="_article_fhccb_33">
-		<p>Let’s define what <em>anagram</em> is:</p>
-<dl><dt>Anagram</dt><dd>Two strings are said to be anagram if we can form one string by arranging the characters of another string.
-	</dd><dd>For example: race - care.
+		<p>Для начала дадим определение:</p>
+<dl><dt>Анаграмма</dt><dd>Литературный приём, состоящий в перестановке букв или звуков определённого слова или словосочетания, что в результате даёт другое слово или словосочетание.
+	</dd><dd>Например: нос - сон, лето - тело.
 	</dd></dl>
-<p>Anagram check is quite common exercise. One of the most straightforward ways to solve this problem is to compare sorted input strings. There is one more way to solve it, it may not be the most optimal option, but it is quite interesting.</p>
-<h2 id="algorithm">Algorithm</h2>
-<ol><li>Map each of the symbols to a distinct prime number.</li>
-<li>Multiply the characters of each word.</li>
-<li>Since every number is a <strong>prime</strong> of a <strong>unique</strong> product of primes <em>(fundamental theorem of arithmetic)</em>, two words are anagrams of their products are the same.</li></ol>
-<h2 id="example">Example</h2>
-<p>Let <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">F(a) = 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></span>, <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">F(e) = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span></span> и <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">F(r) = 5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span></span>, then:</p>
+<p>Проверка строк на условие анаграммы часто встречается среди упражнений. Один из основных способов решения является прибегание к сравниванию отсортированных по алфавитному порядку исходных строк. Однако, имеется ещё один интересный способ решения данной задачи, возможно он и не самый лучший, но крайне интересный.</p>
+<h2 id="алгоритм">Алгоритм</h2>
+<ol><li>Сопоставим в соответствие каждому из символов используемого алфавита простое число.</li>
+<li>Для каждой исходной строки выполним операцию агрегации: перемножим все соответствующие сопоставленные числа между собой.</li>
+<li>Так как использовались именно простые числа, то результирующее число будет уникальным произведением (Фундаментальная теорема арифметики), то исходные строки являются анаграммами исключительно в случае равенства полученных произведений.</li></ol>
+<h2 id="пример">Пример</h2>
+<p>Пусть <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">F(a) = 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></span>, <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">F(e) = 3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span></span> и <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">F(r) = 5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span></span>, тогда:</p>
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>a</mi><mi>r</mi><mi>e</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mo>∗</mo><mn>5</mn><mo>∗</mo><mn>3</mn><mo>=</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">F(are) = 2 * 5 * 3 = 30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mord mathnormal">re</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">30</span></span></span></span></span><!-- HTML_TAG_END -->
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mi>a</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mn>3</mn><mo>∗</mo><mn>2</mn><mo>∗</mo><mn>5</mn><mo>=</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">F(ear) = 3 * 2 * 5 = 30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">30</span></span></span></span></span><!-- HTML_TAG_END -->
 <!-- HTML_TAG_START --><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo stretchy="false">(</mo><mi>e</mi><mi>a</mi><mi>r</mi><mo stretchy="false">)</mo><mo>=</mo><mi>F</mi><mo stretchy="false">(</mo><mi>a</mi><mi>r</mi><mi>e</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">F(ear) = F(are)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">e</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mopen">(</span><span class="mord mathnormal">a</span><span class="mord mathnormal">re</span><span class="mclose">)</span></span></span></span></span><!-- HTML_TAG_END -->
-<h2 id="limitations">Limitations</h2>
-<p>As the prime numbers are the main ingridient of this approach, these primes should be generated first, and it would be better to generate the bare minimum. Also, in case of really long words the value of the product should be considered.</p>
-<h2 id="references">References</h2>
-<ol><li><a href="https://en.wikipedia.org/wiki/Anagram" target="_blank" rel="nofollow" class=" svelte-wqaj6b">Anagram
+<h2 id="недостатки">Недостатки</h2>
+<p>Из недостатков сразу же приходит в голову сам факт использования простых чисел. Перед решением задачи необходимо сгенерировать и привести в соответствие простые числа, желательно в необходимом количестве. С другой стороны, необходимо учитывать размеры произведения для крайне длинных слов.</p>
+<h2 id="ссылки">Ссылки</h2>
+<ol><li><a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0" target="_blank" rel="nofollow" class=" svelte-wqaj6b">Анаграмма
 </a></li>
-<li><a href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_arithmetic" target="_blank" rel="nofollow" class=" svelte-wqaj6b">Fundamental Theorem of Arithmetic
+<li><a href="https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%B0%D1%8F_%D1%82%D0%B5%D0%BE%D1%80%D0%B5%D0%BC%D0%B0_%D0%B0%D0%BB%D0%B3%D0%B5%D0%B1%D1%80%D1%8B" target="_blank" rel="nofollow" class=" svelte-wqaj6b">Фундаментальная теорема алгебры
 </a></li></ol>
 		</main></article></section>
 	<footer class="svelte-1btny6i"><div class="wrapper svelte-1btny6i"><nav class="svelte-1btny6i"><ul class="svelte-1btny6i"><li><a href="/ru/blog" rel="" class=" svelte-wqaj6b">блог
@@ -165,8 +165,8 @@
 
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="--icon-margin: 0; --icon-color: var(--color-primary); " width="1em" height="1em" role="presentation" class="svelte-1c65o49"><path d="M50.25,0h-.08C22.61,0,0,22.31,0,49.8A49.31,49.31,0,0,0,4,69.26,50.89,50.89,0,0,0,30.74,96a49.3,49.3,0,0,0,19.45,4h0C77.86,100,100,77.21,100,49.8A49.77,49.77,0,0,0,50.25,0ZM40.49,6.92A58,58,0,0,0,28.34,23.44H14.75A44.48,44.48,0,0,1,40.49,6.92ZM11,29.26H25.83a61,61,0,0,0-3.57,17.61H6A43.46,43.46,0,0,1,11,29.26ZM11.1,70.7A44,44,0,0,1,6,52.73H22.24a60.25,60.25,0,0,0,3.6,18Zm3.77,5.86H28.34A58,58,0,0,0,40.48,93.07,44.4,44.4,0,0,1,14.87,76.56ZM28.11,52.73H47.26v18H32.15A53.71,53.71,0,0,1,28.11,52.73Zm19.16,38.5A52.87,52.87,0,0,1,35,76.56H47.27V91.23Zm0-44.36H28.13a53.85,53.85,0,0,1,4-17.57H47.27Zm0-23.43H35A52.87,52.87,0,0,1,47.27,8.77ZM89.05,29.3a43.55,43.55,0,0,1,5,17.57H78.13A60.38,60.38,0,0,0,74.55,29.3Zm-3.72-5.86H72.05A57.76,57.76,0,0,0,59.92,7,44.07,44.07,0,0,1,85.33,23.44ZM53.12,8.77A53,53,0,0,1,65.38,23.44H53.12Zm0,20.53H68.24a53.85,53.85,0,0,1,4,17.57H53.12ZM72.28,52.7a53.94,53.94,0,0,1-4,18H53.12v-18ZM53.12,91.23V76.52H65.38A53.18,53.18,0,0,1,53.12,91.23ZM59.94,93A58,58,0,0,0,72.05,76.52H85.21A44.1,44.1,0,0,1,59.94,93ZM74.55,70.7a60.51,60.51,0,0,0,3.6-18H94a44.47,44.47,0,0,1-5.1,18Z"></path></svg>
-	<ul class="svelte-1upp41h"><li><a href="/en/blog/anagram-hash" class="svelte-1upp41h">en</a>
-			</li><li><a href="/ru/blog/anagram-hash" class="svelte-1upp41h active">ru</a>
+	<ul class="svelte-1upp41h"><li><a href="/en/blog/ru-anagram-hash" class="svelte-1upp41h">en</a>
+			</li><li><a href="/ru/blog/ru-anagram-hash" class="svelte-1upp41h active">ru</a>
 			</li></ul>
 </nav></section></div>
 </footer>
