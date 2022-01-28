@@ -5,53 +5,42 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="color-scheme" content="dark light">
-		<title>Interesting anagram check algorithm</title><meta name="author" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="language" content="en" data-svelte="svelte-1viaqva"><meta name="description" content="Exploring interesting solution to check a word for anagram using math." data-svelte="svelte-1viaqva"><meta name="keywords" content="algorithm, math, anagram" data-svelte="svelte-1viaqva"><meta name="language" content="en" data-svelte="svelte-1viaqva"><meta name="og:title" content="Interesting anagram check algorithm" data-svelte="svelte-1viaqva"><meta name="og:description" content="Exploring interesting solution to check a word for anagram using math." data-svelte="svelte-1viaqva"><meta name="og:locale" content="en" data-svelte="svelte-1viaqva"><meta name="og:type" content="article" data-svelte="svelte-1viaqva"><meta name="og:tag" content="algorithm, math, anagram" data-svelte="svelte-1viaqva"><meta name="og:section" content="algorithms" data-svelte="svelte-1viaqva"><meta name="og:site_name" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="og:author" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="og:url" content="https://www.undefined/ru/blog/en-anagram-hash" data-svelte="svelte-1viaqva"><meta name="og:article:published_time" content="2021-11-01T00:00:00.000Z" data-svelte="svelte-1viaqva"><meta name="og:article:modified_time" content="2021-11-28T02:21:00.000Z" data-svelte="svelte-1viaqva"><meta name="twitter:card" content="summary" data-svelte="svelte-1viaqva"><meta name="twitter:title" content="Interesting anagram check algorithm" data-svelte="svelte-1viaqva"><meta name="twitter:description" content="Exploring interesting solution to check a word for anagram using math." data-svelte="svelte-1viaqva"><meta name="twitter:url" content="https://www.undefined/ru/blog/en-anagram-hash" data-svelte="svelte-1viaqva">
-
-		
-
-		<link rel="modulepreload" href="/_app/start-d8cd2463.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-614e74e4.js">
-		<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
-		<link rel="modulepreload" href="/_app/chunks/singletons-12a22614.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-6e02650a.js">
-		<link rel="modulepreload" href="/_app/chunks/i18n-6ba77132.js">
-		<link rel="modulepreload" href="/_app/chunks/timeline.module-548b7137.js">
-		<link rel="modulepreload" href="/_app/chunks/default-897e77c1.js">
-		<link rel="modulepreload" href="/_app/chunks/Link-e060064e.js">
-		<link rel="modulepreload" href="/_app/pages/_lang_/__layout.svelte-192943a0.js">
-		<link rel="modulepreload" href="/_app/chunks/Meta-97f7a04b.js">
-		<link rel="modulepreload" href="/_app/pages/_lang_/blog/_lang_-_slug_.svelte-6a26430a.js">
-		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-9933f25f.css">
-		<link rel="stylesheet" href="/_app/assets/timeline.module-b4f110d0.css">
-
-		<script type="module">
-			import { start } from "/_app/start-d8cd2463.js";
-			start({
-				target: document.querySelector("body"),
-				paths: {"base":"","assets":""},
-				session: {},
-				host: location.host,
-				route: true,
-				spa: false,
-				trailing_slash: "never",
-				hydrate: {
-					status: 200,
-					error: null,
-					nodes: [
-						import("/_app/pages/__layout.svelte-6e02650a.js"),
-						import("/_app/pages/_lang_/__layout.svelte-192943a0.js"),
-						import("/_app/pages/_lang_/blog/_lang_-_slug_.svelte-6a26430a.js")
-					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "\u002Fru\u002Fblog\u002Fen-anagram-hash",
-						query: new URLSearchParams(""),
-						params: {lang:"en",slug:"anagram-hash"}
-					}
-				}
-			});
-		</script>
+		<meta http-equiv="content-security-policy" content=""><title>Interesting anagram check algorithm</title><meta name="author" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="language" content="en" data-svelte="svelte-1viaqva"><meta name="description" content="Exploring interesting solution to check a word for anagram using math." data-svelte="svelte-1viaqva"><meta name="keywords" content="algorithm, math, anagram" data-svelte="svelte-1viaqva"><meta name="language" content="en" data-svelte="svelte-1viaqva"><meta name="og:title" content="Interesting anagram check algorithm" data-svelte="svelte-1viaqva"><meta name="og:description" content="Exploring interesting solution to check a word for anagram using math." data-svelte="svelte-1viaqva"><meta name="og:locale" content="en" data-svelte="svelte-1viaqva"><meta name="og:type" content="article" data-svelte="svelte-1viaqva"><meta name="og:tag" content="algorithm, math, anagram" data-svelte="svelte-1viaqva"><meta name="og:section" content="algorithms" data-svelte="svelte-1viaqva"><meta name="og:site_name" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="og:author" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="og:url" content="https://www.undefined/ru/blog/en-anagram-hash" data-svelte="svelte-1viaqva"><meta name="og:article:published_time" content="2021-11-01T00:00:00.000Z" data-svelte="svelte-1viaqva"><meta name="og:article:modified_time" content="2021-11-28T02:21:00.000Z" data-svelte="svelte-1viaqva"><meta name="twitter:card" content="summary" data-svelte="svelte-1viaqva"><meta name="twitter:title" content="Interesting anagram check algorithm" data-svelte="svelte-1viaqva"><meta name="twitter:description" content="Exploring interesting solution to check a word for anagram using math." data-svelte="svelte-1viaqva"><meta name="twitter:url" content="https://www.undefined/ru/blog/en-anagram-hash" data-svelte="svelte-1viaqva">
+	<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-15e27478.css">
+	<link rel="stylesheet" href="/_app/assets/timeline.module-45555324.css">
+	<link rel="modulepreload" href="/_app/start-eba14175.js">
+	<link rel="modulepreload" href="/_app/chunks/vendor-5f696930.js">
+	<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
+	<link rel="modulepreload" href="/_app/chunks/singletons-a6a7384f.js">
+	<link rel="modulepreload" href="/_app/pages/__layout.svelte-d9e29123.js">
+	<link rel="modulepreload" href="/_app/chunks/i18n-4b42d9dd.js">
+	<link rel="modulepreload" href="/_app/chunks/timeline.module-eeb9beae.js">
+	<link rel="modulepreload" href="/_app/chunks/default-b686c923.js">
+	<link rel="modulepreload" href="/_app/chunks/Link-ed4cb42f.js">
+	<link rel="modulepreload" href="/_app/pages/_lang_/__layout.svelte-0bc531ff.js">
+	<link rel="modulepreload" href="/_app/chunks/Meta-618d104d.js">
+	<link rel="modulepreload" href="/_app/pages/_lang_/blog/_lang_-_slug_.svelte-6eaa78ca.js"><script type="module">
+		import { start } from "/_app/start-eba14175.js";
+		start({
+			target: document.querySelector("body"),
+			paths: {"base":"","assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/_app/pages/__layout.svelte-d9e29123.js"),
+						import("/_app/pages/_lang_/__layout.svelte-0bc531ff.js"),
+						import("/_app/pages/_lang_/blog/_lang_-_slug_.svelte-6eaa78ca.js")
+				],
+				url: new URL("http://sveltekit-prerender/ru/blog/en-anagram-hash"),
+				params: {lang:"en",slug:"anagram-hash"}
+			}
+		});
+	</script>
 	</head>
 	<body>
 		
@@ -160,7 +149,7 @@
             
 </a>
           </li></ul></nav>
-    <section label="user" class="svelte-1btny6i"><span>© 2021 eric/rovell, v.0.6.0</span>
+    <section label="user" class="svelte-1btny6i"><span>© 2022 eric/rovell, v.0.6.0</span>
       <nav class="lang-select svelte-1upp41h">
 
 
