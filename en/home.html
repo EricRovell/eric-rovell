@@ -5,9 +5,10 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="color-scheme" content="dark light">
-		<meta http-equiv="content-security-policy" content="">
+		<meta http-equiv="content-security-policy" content=""><title>Eric Rovell</title><meta name="author" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="language" content="en" data-svelte="svelte-1viaqva"><meta name="description" content="Personal blog about programming &amp; photography." data-svelte="svelte-1viaqva"><meta name="keywords" content="blog, web development, photography, portfolio" data-svelte="svelte-1viaqva"><meta name="subject" content="personal website" data-svelte="svelte-1viaqva"><meta name="og:title" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="og:description" content="Personal blog about programming &amp; photography." data-svelte="svelte-1viaqva"><meta name="og:type" content="website" data-svelte="svelte-1viaqva"><meta name="og:url" content="https://www.undefined/en/home" data-svelte="svelte-1viaqva"><meta name="twitter:card" content="summary" data-svelte="svelte-1viaqva"><meta name="twitter:title" content="Eric Rovell" data-svelte="svelte-1viaqva"><meta name="twitter:description" content="Personal blog about programming &amp; photography." data-svelte="svelte-1viaqva"><meta name="twitter:url" content="https://www.undefined/en/home" data-svelte="svelte-1viaqva">
 	<link rel="stylesheet" href="/_app/assets/Root.svelte_svelte_type_style_lang-fc4e4465.css">
 	<link rel="stylesheet" href="/_app/assets/timeline.module-856095b0.css">
+	<link rel="stylesheet" href="/_app/assets/pages/_lang_/home.svelte-1ea0006d.css">
 	<link rel="modulepreload" href="/_app/start-9a18580a.js">
 	<link rel="modulepreload" href="/_app/chunks/vendor-5e564936.js">
 	<link rel="modulepreload" href="/_app/chunks/preload-helper-ec9aa979.js">
@@ -17,7 +18,13 @@
 	<link rel="modulepreload" href="/_app/chunks/timeline.module-e8902b8f.js">
 	<link rel="modulepreload" href="/_app/chunks/default-e5557001.js">
 	<link rel="modulepreload" href="/_app/chunks/Link-d1867911.js">
-	<link rel="modulepreload" href="/_app/pages/index.svelte-61e11093.js">
+	<link rel="modulepreload" href="/_app/pages/_lang_/__layout.svelte-8cbdcde1.js">
+	<link rel="modulepreload" href="/_app/chunks/Meta-ff4187d7.js">
+	<link rel="modulepreload" href="/_app/pages/_lang_/home.svelte-8a6326dc.js">
+	<link rel="modulepreload" href="/_app/chunks/Datetime-412fe921.js">
+	<link rel="modulepreload" href="/_app/chunks/util-0ff25a74.js">
+	<link rel="modulepreload" href="/_app/chunks/PageMeta-65d843eb.js">
+	<link rel="modulepreload" href="/_app/chunks/ContentFilter-8c7a792c.js">
 	</head>
 	<body>
 		
@@ -58,7 +65,33 @@
 </button>
     </section>
 </header>
-	<section label="content" class="content svelte-vsndk3"></section>
+	<section label="content" class="content svelte-vsndk3">
+
+
+
+
+
+<div class="_layout_13zo0_1">
+<main><ol class="_timeline_1vzdc_1"><section class="_timeline-section_1vzdc_19"><header>
+<time datetime="2021" class="svelte-1ugyifs">2021
+</time>
+					</header>
+	<ol><li class="_item_1vzdc_91"><article class="svelte-9zut56"><footer class="svelte-9zut56">
+<time datetime="November 1" class="svelte-1ugyifs">November 1
+</time>, blogpost</footer>
+								<a href="/en/blog/en-anagram-hash" rel="" class=" svelte-wqaj6b">Interesting anagram check algorithm
+								
+</a></article>
+						</li>
+				</ol></section></ol></main>
+<aside><fieldset class="svelte-1m8bqhz"><legend class="svelte-1m8bqhz">content language</legend>
+	<label class="svelte-1m8bqhz"><input type="checkbox" name="content-lang" value="en" disabled checked>
+			English
+		</label><label class="svelte-1m8bqhz"><input type="checkbox" name="content-lang" value="ru" >
+			Русский
+		</label>
+</fieldset></aside>
+</div></section>
 	<footer class="svelte-1btny6i"><div class="wrapper svelte-1btny6i"><nav class="svelte-1btny6i"><ul class="svelte-1btny6i"><li><a href="/en/blog" rel="" class=" svelte-wqaj6b">blog
             
 </a>
@@ -91,10 +124,10 @@
 </div>
 
 
-		<script type="module" data-hydrate="i029c">
+		<script type="module" data-hydrate="14on2vo">
 		import { start } from "/_app/start-9a18580a.js";
 		start({
-			target: document.querySelector('[data-hydrate="i029c"]').parentNode,
+			target: document.querySelector('[data-hydrate="14on2vo"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -105,12 +138,13 @@
 				error: null,
 				nodes: [
 					import("/_app/pages/__layout.svelte-b2c0a4a3.js"),
-						import("/_app/pages/index.svelte-61e11093.js")
+						import("/_app/pages/_lang_/__layout.svelte-8cbdcde1.js"),
+						import("/_app/pages/_lang_/home.svelte-8a6326dc.js")
 				],
-				url: new URL("http://sveltekit-prerender/"),
-				params: {}
+				url: new URL("http://sveltekit-prerender/en/home"),
+				params: {lang:"en"}
 			}
 		});
-	</script>
+	</script><script type="application/json" data-type="svelte-data" data-url="/api/blog/posts.json?sort=-1">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"[{\"created\":\"2021-11-01T00:00:00.000Z\",\"updated\":\"2021-11-28T02:21:00.000Z\",\"keywords\":[\"algorithm\",\" math\",\" anagram\"],\"slug\":\"en-anagram-hash\",\"lang\":\"en\",\"title\":\"Interesting anagram check algorithm\",\"description\":\"Exploring interesting solution to check a word for anagram using math.\",\"series\":\"algorithms\",\"published\":true,\"layout\":\"blogpost\",\"toc\":[{\"level\":2,\"title\":\"Algorithm\",\"id\":\"algorithm\"},{\"level\":2,\"title\":\"Example\",\"id\":\"example\"},{\"level\":2,\"title\":\"Limitations\",\"id\":\"limitations\"},{\"level\":2,\"title\":\"References\",\"id\":\"references\"}]},{\"created\":\"2021-11-01T00:00:00.000Z\",\"updated\":\"2021-11-30T03:12:00.000Z\",\"keywords\":[\"алгоритм\",\" математика\",\" анаграмма\"],\"slug\":\"ru-anagram-hash\",\"lang\":\"ru\",\"title\":\"Интересный алгоритм проверки слов на анаграмму\",\"description\":\"Познакомимся с альтернативным способом проверить слово на анаграмму с помощью математики.\",\"series\":\"algorithms\",\"published\":true,\"layout\":\"blogpost\",\"toc\":[{\"level\":2,\"title\":\"Алгоритм\",\"id\":\"алгоритм\"},{\"level\":2,\"title\":\"Пример\",\"id\":\"пример\"},{\"level\":2,\"title\":\"Недостатки\",\"id\":\"недостатки\"},{\"level\":2,\"title\":\"Ссылки\",\"id\":\"ссылки\"}]},{\"created\":\"2021-06-11T00:00:00.000Z\",\"updated\":\"2021-06-13T00:00:00.000Z\",\"keywords\":[\"проект эйлера\",\" математика\",\" числа фибоначчи\"],\"slug\":\"ru-project-euler-002\",\"lang\":\"ru\",\"title\":\"Проект Эйлера #2: Чётные числа Фибоначчи\",\"description\":\"Решаем Проект Эйлера, проблема №2: Чётные числа Фибоначчи.\",\"series\":\"project-euler\",\"published\":true,\"layout\":\"blogpost\",\"toc\":[{\"level\":2,\"title\":\"Brute-force решение\",\"id\":\"brute-force-решение\"},{\"level\":3,\"title\":\"Пример реализации на Python\",\"id\":\"пример-реализации-на-python\"},{\"level\":2,\"title\":\"Чётная последовательность Фибоначчи\",\"id\":\"чётная-последовательность-фибоначчи\"},{\"level\":3,\"title\":\"Пример реализации на Python\",\"id\":\"пример-реализации-на-python\"},{\"level\":2,\"title\":\"Ссылки\",\"id\":\"ссылки\"}]},{\"created\":\"2021-06-10T00:00:00.000Z\",\"updated\":\"2021-08-26T00:00:00.000Z\",\"keywords\":[\"проект эйлера\",\" математика\",\" арифметическая прогрессия\"],\"slug\":\"ru-project-euler-001\",\"lang\":\"ru\",\"title\":\"Проект Эйлера #1: Числа, кратные 3 или 5\",\"description\":\"Решаем Проект Эйлера, проблема №1: Числа кратные 3 или 5.\",\"series\":\"project-euler\",\"published\":true,\"layout\":\"blogpost\",\"toc\":[{\"level\":2,\"title\":\"Вычислительный подход\",\"id\":\"вычислительный-подход\"},{\"level\":3,\"title\":\"Пример реализации на Python\",\"id\":\"пример-реализации-на-python\"},{\"level\":3,\"title\":\"Пример реализации на JavaScript\",\"id\":\"пример-реализации-на-javascript\"},{\"level\":2,\"title\":\"Поиск оптимального решения\",\"id\":\"поиск-оптимального-решения\"},{\"level\":2,\"title\":\"Реализация на Python\",\"id\":\"реализация-на-python\"},{\"level\":2,\"title\":\"Ссылки\",\"id\":\"ссылки\"}]}]"}</script>
 	</body>
 </html>

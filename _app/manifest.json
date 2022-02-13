@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-db5c02e0.js",
+    "file": "start-9a18580a.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -22,37 +22,37 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-8f389a06.js",
+    "file": "pages/__layout.svelte-b2c0a4a3.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
       "_i18n-97c796a3.js",
-      "_timeline.module-8833a541.js",
-      "_default-539fca4b.js",
-      "_Link-a9920c06.js",
+      "_timeline.module-e8902b8f.js",
+      "_default-e5557001.js",
+      "_Link-d1867911.js",
       "_preload-helper-ec9aa979.js"
     ],
     "css": [
-      "assets/Root.svelte_svelte_type_style_lang-15e27478.css"
+      "assets/Root.svelte_svelte_type_style_lang-fc4e4465.css"
     ]
   },
   "src/routes/__error.svelte": {
-    "file": "pages/__error.svelte-0627e28f.js",
+    "file": "pages/__error.svelte-366dd24b.js",
     "src": "src/routes/__error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
-      "_timeline.module-8833a541.js",
+      "_timeline.module-e8902b8f.js",
       "_i18n-97c796a3.js",
-      "_Meta-82cbf975.js",
+      "_Meta-ff4187d7.js",
       "_preload-helper-ec9aa979.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-f85510e9.js",
+    "file": "pages/index.svelte-61e11093.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -64,98 +64,98 @@
     ]
   },
   "src/routes/[lang]/__layout.svelte": {
-    "file": "pages/_lang_/__layout.svelte-d9e5a774.js",
+    "file": "pages/_lang_/__layout.svelte-8cbdcde1.js",
     "src": "src/routes/[lang]/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
-      "_timeline.module-8833a541.js",
+      "_timeline.module-e8902b8f.js",
       "_i18n-97c796a3.js",
-      "_Meta-82cbf975.js",
+      "_Meta-ff4187d7.js",
       "_preload-helper-ec9aa979.js"
     ]
   },
   "src/routes/[lang]/projects/index.svelte": {
-    "file": "pages/_lang_/projects/index.svelte-64175460.js",
+    "file": "pages/_lang_/projects/index.svelte-f0981631.js",
     "src": "src/routes/[lang]/projects/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
       "_i18n-97c796a3.js",
-      "_default-539fca4b.js",
-      "_timeline.module-8833a541.js",
-      "_Card-0ae6760d.js",
+      "_default-e5557001.js",
+      "_timeline.module-e8902b8f.js",
+      "_Card-8940876d.js",
       "_util-0ff25a74.js",
-      "_PageMeta-cfae7ec4.js",
+      "_PageMeta-65d843eb.js",
       "_preload-helper-ec9aa979.js",
-      "_Datetime-d4c82ff5.js",
-      "_Link-a9920c06.js",
-      "_Meta-82cbf975.js"
+      "_Datetime-412fe921.js",
+      "_Link-d1867911.js",
+      "_Meta-ff4187d7.js"
     ],
     "css": [
       "assets/pages/_lang_/projects/index.svelte-006aba99.css"
     ]
   },
   "src/routes/[lang]/gallery/index.svelte": {
-    "file": "pages/_lang_/gallery/index.svelte-894b6cb4.js",
+    "file": "pages/_lang_/gallery/index.svelte-4e23f24f.js",
     "src": "src/routes/[lang]/gallery/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
-      "_timeline.module-8833a541.js",
+      "_timeline.module-e8902b8f.js",
       "_i18n-97c796a3.js",
-      "_default-539fca4b.js",
+      "_default-e5557001.js",
       "_util-0ff25a74.js",
-      "_PageMeta-cfae7ec4.js",
+      "_PageMeta-65d843eb.js",
       "_preload-helper-ec9aa979.js",
-      "_Meta-82cbf975.js"
+      "_Meta-ff4187d7.js"
     ],
     "css": [
       "assets/pages/_lang_/gallery/index.svelte-88bd6350.css"
     ]
   },
   "src/routes/[lang]/about.svelte": {
-    "file": "pages/_lang_/about.svelte-7b710a08.js",
+    "file": "pages/_lang_/about.svelte-3a5c994e.js",
     "src": "src/routes/[lang]/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
-      "_timeline.module-8833a541.js",
+      "_timeline.module-e8902b8f.js",
       "_i18n-97c796a3.js",
-      "_PageMeta-cfae7ec4.js",
+      "_PageMeta-65d843eb.js",
       "_preload-helper-ec9aa979.js",
-      "_Meta-82cbf975.js"
+      "_Meta-ff4187d7.js"
     ]
   },
   "src/routes/[lang]/blog/index.svelte": {
-    "file": "pages/_lang_/blog/index.svelte-a0609a39.js",
+    "file": "pages/_lang_/blog/index.svelte-d7f3fb4d.js",
     "src": "src/routes/[lang]/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
-      "_timeline.module-8833a541.js",
+      "_timeline.module-e8902b8f.js",
       "_i18n-97c796a3.js",
-      "_Card-0ae6760d.js",
+      "_Card-8940876d.js",
       "_util-0ff25a74.js",
-      "_PageMeta-cfae7ec4.js",
-      "_ContentFilter-e64ee2ea.js",
+      "_PageMeta-65d843eb.js",
+      "_ContentFilter-8c7a792c.js",
       "_preload-helper-ec9aa979.js",
-      "_Datetime-d4c82ff5.js",
-      "_Link-a9920c06.js",
-      "_Meta-82cbf975.js"
+      "_Datetime-412fe921.js",
+      "_Link-d1867911.js",
+      "_Meta-ff4187d7.js"
     ],
     "css": [
       "assets/pages/_lang_/blog/index.svelte-974cdebb.css",
-      "assets/Root.svelte_svelte_type_style_lang-15e27478.css"
+      "assets/Root.svelte_svelte_type_style_lang-fc4e4465.css"
     ]
   },
   "src/routes/[lang]/blog/[lang]-[slug].svelte": {
-    "file": "pages/_lang_/blog/_lang_-_slug_.svelte-41747907.js",
+    "file": "pages/_lang_/blog/_lang_-_slug_.svelte-47c5a6fb.js",
     "src": "src/routes/[lang]/blog/[lang]-[slug].svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -171,25 +171,25 @@
     ]
   },
   "src/routes/[lang]/home.svelte": {
-    "file": "pages/_lang_/home.svelte-91aed1ac.js",
+    "file": "pages/_lang_/home.svelte-8a6326dc.js",
     "src": "src/routes/[lang]/home.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
-      "_timeline.module-8833a541.js",
-      "_Link-a9920c06.js",
+      "_timeline.module-e8902b8f.js",
+      "_Link-d1867911.js",
       "_i18n-97c796a3.js",
-      "_Datetime-d4c82ff5.js",
+      "_Datetime-412fe921.js",
       "_util-0ff25a74.js",
-      "_PageMeta-cfae7ec4.js",
-      "_ContentFilter-e64ee2ea.js",
+      "_PageMeta-65d843eb.js",
+      "_ContentFilter-8c7a792c.js",
       "_preload-helper-ec9aa979.js",
-      "_Meta-82cbf975.js"
+      "_Meta-ff4187d7.js"
     ],
     "css": [
       "assets/pages/_lang_/home.svelte-1ea0006d.css",
-      "assets/Root.svelte_svelte_type_style_lang-15e27478.css"
+      "assets/Root.svelte_svelte_type_style_lang-fc4e4465.css"
     ]
   },
   "_vendor-5e564936.js": {
@@ -214,8 +214,8 @@
       "src/core/dicts/ru-pages.json"
     ]
   },
-  "_timeline.module-8833a541.js": {
-    "file": "chunks/timeline.module-8833a541.js",
+  "_timeline.module-e8902b8f.js": {
+    "file": "chunks/timeline.module-e8902b8f.js",
     "imports": [
       "_vendor-5e564936.js",
       "_i18n-97c796a3.js"
@@ -224,60 +224,60 @@
       "assets/timeline.module-856095b0.css"
     ]
   },
-  "_default-539fca4b.js": {
-    "file": "chunks/default-539fca4b.js",
+  "_default-e5557001.js": {
+    "file": "chunks/default-e5557001.js",
     "imports": [
       "_vendor-5e564936.js",
-      "_timeline.module-8833a541.js"
+      "_timeline.module-e8902b8f.js"
     ]
   },
-  "_Link-a9920c06.js": {
-    "file": "chunks/Link-a9920c06.js",
+  "_Link-d1867911.js": {
+    "file": "chunks/Link-d1867911.js",
     "imports": [
       "_vendor-5e564936.js",
-      "_timeline.module-8833a541.js"
+      "_timeline.module-e8902b8f.js"
     ]
   },
-  "_Meta-82cbf975.js": {
-    "file": "chunks/Meta-82cbf975.js",
+  "_Meta-ff4187d7.js": {
+    "file": "chunks/Meta-ff4187d7.js",
     "imports": [
       "_vendor-5e564936.js"
     ]
   },
-  "_Card-0ae6760d.js": {
-    "file": "chunks/Card-0ae6760d.js",
+  "_Card-8940876d.js": {
+    "file": "chunks/Card-8940876d.js",
     "imports": [
       "_vendor-5e564936.js",
-      "_Datetime-d4c82ff5.js",
-      "_Link-a9920c06.js",
-      "_timeline.module-8833a541.js"
+      "_Datetime-412fe921.js",
+      "_Link-d1867911.js",
+      "_timeline.module-e8902b8f.js"
     ]
   },
   "_util-0ff25a74.js": {
     "file": "chunks/util-0ff25a74.js"
   },
-  "_PageMeta-cfae7ec4.js": {
-    "file": "chunks/PageMeta-cfae7ec4.js",
+  "_PageMeta-65d843eb.js": {
+    "file": "chunks/PageMeta-65d843eb.js",
     "imports": [
       "_vendor-5e564936.js",
       "_i18n-97c796a3.js",
-      "_timeline.module-8833a541.js",
-      "_Meta-82cbf975.js"
+      "_timeline.module-e8902b8f.js",
+      "_Meta-ff4187d7.js"
     ]
   },
-  "_Datetime-d4c82ff5.js": {
-    "file": "chunks/Datetime-d4c82ff5.js",
+  "_Datetime-412fe921.js": {
+    "file": "chunks/Datetime-412fe921.js",
     "imports": [
       "_vendor-5e564936.js",
-      "_timeline.module-8833a541.js"
+      "_timeline.module-e8902b8f.js"
     ]
   },
-  "_ContentFilter-e64ee2ea.js": {
-    "file": "chunks/ContentFilter-e64ee2ea.js",
+  "_ContentFilter-8c7a792c.js": {
+    "file": "chunks/ContentFilter-8c7a792c.js",
     "imports": [
       "_vendor-5e564936.js",
       "_i18n-97c796a3.js",
-      "_timeline.module-8833a541.js"
+      "_timeline.module-e8902b8f.js"
     ]
   },
   "src/core/dicts/en.json": {
@@ -301,32 +301,32 @@
     "isDynamicEntry": true
   },
   "src/content/blogpost/anagram-hash/index-en.svx": {
-    "file": "chunks/index-en-9d5966f6.js",
+    "file": "chunks/index-en-024337a2.js",
     "src": "src/content/blogpost/anagram-hash/index-en.svx",
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
-      "_katex.min-ed3163fc.js",
-      "_Link-a9920c06.js",
-      "_timeline.module-8833a541.js",
+      "_katex.min-2deb2d12.js",
+      "_Link-d1867911.js",
+      "_timeline.module-e8902b8f.js",
       "_i18n-97c796a3.js",
       "_preload-helper-ec9aa979.js",
-      "_Meta-82cbf975.js",
-      "_Datetime-d4c82ff5.js"
+      "_Meta-ff4187d7.js",
+      "_Datetime-412fe921.js"
     ]
   },
-  "_katex.min-ed3163fc.js": {
-    "file": "chunks/katex.min-ed3163fc.js",
+  "_katex.min-2deb2d12.js": {
+    "file": "chunks/katex.min-2deb2d12.js",
     "imports": [
       "_vendor-5e564936.js",
-      "_timeline.module-8833a541.js",
+      "_timeline.module-e8902b8f.js",
       "_i18n-97c796a3.js",
-      "_Link-a9920c06.js",
-      "_Meta-82cbf975.js",
-      "_Datetime-d4c82ff5.js"
+      "_Link-d1867911.js",
+      "_Meta-ff4187d7.js",
+      "_Datetime-412fe921.js"
     ],
     "css": [
-      "assets/katex.min-2d00dc69.css"
+      "assets/katex.min-d4949ad9.css"
     ],
     "assets": [
       "assets/KaTeX_AMS-Regular-0cdd387c.woff2",
@@ -391,62 +391,62 @@
     ]
   },
   "src/content/blogpost/anagram-hash/index-ru.svx": {
-    "file": "chunks/index-ru-03926d88.js",
+    "file": "chunks/index-ru-a5010662.js",
     "src": "src/content/blogpost/anagram-hash/index-ru.svx",
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
-      "_katex.min-ed3163fc.js",
-      "_Link-a9920c06.js",
-      "_timeline.module-8833a541.js",
+      "_katex.min-2deb2d12.js",
+      "_Link-d1867911.js",
+      "_timeline.module-e8902b8f.js",
       "_i18n-97c796a3.js",
       "_preload-helper-ec9aa979.js",
-      "_Meta-82cbf975.js",
-      "_Datetime-d4c82ff5.js"
+      "_Meta-ff4187d7.js",
+      "_Datetime-412fe921.js"
     ]
   },
   "src/content/blogpost/project-euler-001/index-ru.svx": {
-    "file": "chunks/index-ru-b9df747e.js",
+    "file": "chunks/index-ru-fe10b0d3.js",
     "src": "src/content/blogpost/project-euler-001/index-ru.svx",
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
-      "_katex.min-ed3163fc.js",
-      "_EulerProblem-2faeeaaf.js",
-      "_timeline.module-8833a541.js",
+      "_katex.min-2deb2d12.js",
+      "_EulerProblem-94210b17.js",
+      "_timeline.module-e8902b8f.js",
       "_i18n-97c796a3.js",
-      "_Link-a9920c06.js",
-      "_Meta-82cbf975.js",
-      "_Datetime-d4c82ff5.js",
-      "_default-539fca4b.js",
+      "_Link-d1867911.js",
+      "_Meta-ff4187d7.js",
+      "_Datetime-412fe921.js",
+      "_default-e5557001.js",
       "_preload-helper-ec9aa979.js"
     ]
   },
-  "_EulerProblem-2faeeaaf.js": {
-    "file": "chunks/EulerProblem-2faeeaaf.js",
+  "_EulerProblem-94210b17.js": {
+    "file": "chunks/EulerProblem-94210b17.js",
     "imports": [
       "_vendor-5e564936.js",
-      "_default-539fca4b.js",
-      "_Link-a9920c06.js",
+      "_default-e5557001.js",
+      "_Link-d1867911.js",
       "_i18n-97c796a3.js",
-      "_timeline.module-8833a541.js",
-      "_katex.min-ed3163fc.js"
+      "_timeline.module-e8902b8f.js",
+      "_katex.min-2deb2d12.js"
     ]
   },
   "src/content/blogpost/project-euler-002/index-ru.svx": {
-    "file": "chunks/index-ru-fe052e52.js",
+    "file": "chunks/index-ru-efa794c8.js",
     "src": "src/content/blogpost/project-euler-002/index-ru.svx",
     "isDynamicEntry": true,
     "imports": [
       "_vendor-5e564936.js",
-      "_katex.min-ed3163fc.js",
-      "_EulerProblem-2faeeaaf.js",
-      "_timeline.module-8833a541.js",
+      "_katex.min-2deb2d12.js",
+      "_EulerProblem-94210b17.js",
+      "_timeline.module-e8902b8f.js",
       "_i18n-97c796a3.js",
-      "_Link-a9920c06.js",
-      "_Meta-82cbf975.js",
-      "_Datetime-d4c82ff5.js",
-      "_default-539fca4b.js",
+      "_Link-d1867911.js",
+      "_Meta-ff4187d7.js",
+      "_Datetime-412fe921.js",
+      "_default-e5557001.js",
       "_preload-helper-ec9aa979.js"
     ]
   }
